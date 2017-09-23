@@ -18,13 +18,13 @@
           <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Вязание на заказ</a>
+          <a href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item social-list__item--search">
           <a href="#">Поиск по сайту</a>
         </li>
         <li class="site-list__item social-list__item--cart">
-          <a href="#">Корзина: <span>пока пуста</span></a>
+          <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -43,27 +43,29 @@
   <div class="goods">
     <h2 class="goods__title">Вязаные картинки</h2>
     <p class="goods__category">товар недели</p>
-    <p class="goods__description">
-      Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-    </p>
-    <table class="goods__character character">
-      <tr>
-        <td class="character__title">Цвет:</th>
-          <td class="character__value">&laquo;Тиффани&raquo;/серый</th>
-      </tr>
-      <tr>
-        <td class="character__title">Диаметр:</td>
-        <td class="character__value">25 см</td>
-      </tr>
-      <tr>
-        <td class="character__title">Высота:</td>
-        <td class="character__value">15 см</td>
-      </tr>
-    </table>
-    <!--============== тут подойдет таблица? =========  -->
-    <img class="goods__image" src="" alt="Вязанная корзинка">
-    <p class="goods__price">Цена: 990 руб.</p>
-    <button class="button goods__button" type="button" name="button">Заказать</button>
+    <div class="goods__item">
+      <p class="goods__description">
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+      </p>
+      <table class="goods__character character">
+        <tr>
+          <td class="character__title">Цвет:</th>
+            <td class="character__value">&laquo;Тиффани&raquo;/серый</th>
+        </tr>
+        <tr>
+          <td class="character__title">Диаметр:</td>
+          <td class="character__value">25 см</td>
+        </tr>
+        <tr>
+          <td class="character__title">Высота:</td>
+          <td class="character__value">15 см</td>
+        </tr>
+      </table>
+      <!--============== тут подойдет таблица? =========  -->
+      <img class="goods__image" src="" alt="Вязанная корзинка">
+      <p class="goods__price">Цена: 990 руб.</p>
+      <button class="button goods__button" type="button" name="button">Заказать</button>
+    </div>
   </div>
   <div class="abous-us">
     <h2 class="about-us__title title-text">Коротко о нас</h2>
@@ -96,21 +98,22 @@
     <div class="reviews__wrapper slider">
       <h2 class="reviews__title title-text">Отзывы</h2>
       <div class="review__list slider__list">
-      <blockquote class="reviews__item slider__item">
-        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="reviews__author-name">
+        <blockquote class="reviews__item slider__item">
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
+            лайков!</p>
+          <cite class="reviews__author-name">
         Анастасия Красильникова
         </cite>
-        <span class="reviews__author-adres">
+          <span class="reviews__author-adres">
         @misssssiskras
         </span>
-      </blockquote>
-      <p class="reviews__toggle slider__toggle">
-      <button class="reviews__button-toggle button-prev" type="button" name="button">Предыдущий отзыв</button>
-      <button class="reviews__button-toggle button-next" type="button" name="button">Следующий отзыв</button>
-      </p>
-      <button class="button reviews__button" type="button" name="button">Написать</button>
-    </div>
+        </blockquote>
+        <p class="reviews__toggle slider__toggle">
+          <button class="reviews__button-toggle button-prev" type="button" name="button">Предыдущий отзыв</button>
+          <button class="reviews__button-toggle button-next" type="button" name="button">Следующий отзыв</button>
+        </p>
+        <button class="button reviews__button" type="button" name="button">Написать</button>
+      </div>
     </div>
   </div>
   <div class="contacts">
