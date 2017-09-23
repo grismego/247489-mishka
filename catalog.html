@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="header__logo">
+      <img class="header__logo-image" src="" alt="MISHKA" width="88" height="35">
+    </a>
+    <nav class="header-nav">
+      <button class="header-nav__toogle" type="button" name="button">Октрыть меню</button>
+      <ul class="header-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item social-list__item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item social-list__item--cart">
+          <a href="#">Корзина: <span>пока пуста</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="page-title page-title--catalog">
+    <h1 class="page-title__text">Каталог товаров</h1>
+  </div>
+  <div class="catalog">
+    <article class="catalog__item">
+      <a class="catolog__link" href="#">
+      <img class="catalog__image" src="" alt="Зайчик-попрыгайчик">
+      <h2 class="catalog__title">Зайчик попрыгайчик</h2>
+      </a>
+      <p class="catalog__features">Рост: 30 см, вес 200г.</p>
+      <div class="catalog__price">
+        <span class="catalog__price-value">1200 руб.</span>
+        <a class="catalog__price-cart">добавить в корзину</a>
+      </div>
+    </article>
+    <article class="catalog__item">
+      <a class="catolog__link" href="#">
+      <img class="catalog__image" src="" alt="Корзинка для белья">
+      <h2 class="catalog__title">Корзинка для белья</h2>
+      </a>
+      <p class="catalog__features">Рост: 15 см, высота 10 см</p>
+      <div class="catalog__price">
+        <span class="catalog__price-value">690 руб.</span>
+        <a class="catalog__price-cart">добавить в корзину</a>
+      </div>
+    </article>
+    <article class="catalog__item">
+      <a class="catolog__link" href="#">
+      <img class="catalog__image" src="" alt="Большая корзинка для игрушек">
+      <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+      </a>
+      <p class="catalog__features">Диаметр: 30 см, высота 30 см</p>
+      <div class="catalog__price">
+        <span class="catalog__price-value">1500 руб.</span>
+        <a class="catalog__price-cart">добавить в корзину</a>
+      </div>
+    </article>
+    <div class="video">
+      <h2 class="video__title">Процесс производства</h2>
+      <div class="video__container">
+        <img class="video__image image-button" src="" alt="">
+      </div>
+      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+      <button class="button video__button"type="button" name="button">Сделать заказ</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">ВК</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy">ФБ</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="https://instagram.com/htmlacademy">Инстаграм</a>
+        </li>
+      </ul>
+    </div>
+    <div class="copy">
+      <span class="copy__text">Разработано</span>
+      <a class="copy__img" href="https://htmlacademy.ru/intensive/adaptive">
+      <img  src="" alt="htmlacademy.ru">
+      </a>
+    </div>
+  </footer>
+  <div class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <span class="modal__option">Выберете размер</span>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <input type="radio" name="radio-value" value="s" id="modal__radio-1">
+      <input type="radio" name="radio-value" value="m" id="modal__radio-2">
+      <input type="radio" name="radio-value" value="l" id="modal__radio-3">
+      <div class="modal__toggles">
+        <label for="modal__radio-1" class="modal__toggle">s</label>
+        <label for="modal__radio-2" class="modal__toggle">m</label>
+        <label for="modal__radio-3" class="modal__toggle">l</label>
+      </div>
+      <a class="button modal__button" href="form.html">сделать заказ</a>
+    </form>
+  </div>
+</body>
+
+</html>
