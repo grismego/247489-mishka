@@ -8,11 +8,11 @@
 
 <body>
   <header class="header">
-    <a href="#" class="header__logo">
-      <img class="header__logo-image" src="http://placehold.it/150x100" alt="MISHKA" width="88" height="35">
-    </a>
     <nav class="header-nav">
-      <button class="header-nav__toogle" type="button" name="button">Октрыть меню</button>
+      <a href="index.html" class="header-nav__logo">
+        <img class="header-nav__logo-image" src="http://placehold.it/150x100" alt="MISHKA" width="88" height="35">
+      </a>
+      <a class="header-nav__toogle">Октрыть меню</a>
       <ul class="header-nav__list site-list">
         <li class="site-list__item">
           <a href="catalog.html">Каталог товаров</a>
@@ -33,16 +33,16 @@
     <h1 class="page-title__text">Милые штучки ручной работы для дома</h1>
   </div>
   <div class="categories">
-    <article class="categories__item categories__item--light">
+    <div class="categories__item categories__item--light">
       <a class="interior" href="#">Предметы интерьера</a>
-    </article>
-    <article class="categories__item categories__item--dark">
+    </div>
+    <div class="categories__item categories__item--dark">
       <a class="kids-toys" href="#">Детские игрушки</a>
-    </article>
+    </div>
   </div>
   <div class="goods">
     <h2 class="goods__title">Вязаные картинки</h2>
-    <p class="goods__category">товар недели</p>
+    <span class="goods__category">товар недели</span>
     <div class="goods__item">
       <p class="goods__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
@@ -50,7 +50,7 @@
       <table class="goods__character character">
         <tr>
           <td class="character__title">Цвет:</td>
-            <td class="character__value">&laquo;Тиффани&raquo;/серый</td>
+          <td class="character__value">&laquo;Тиффани&raquo;/серый</td>
         </tr>
         <tr>
           <td class="character__title">Диаметр:</td>
@@ -61,66 +61,64 @@
           <td class="character__value">15 см</td>
         </tr>
       </table>
-      <!--============== тут подойдет таблица? =========  -->
       <img class="goods__image" src="http://placehold.it/150x100" alt="Вязанная корзинка">
       <p class="goods__price">Цена: 990 руб.</p>
-      <button class="button goods__button" type="button" name="button">Заказать</button>
+      <a class="button goods__button">Заказать</a>
     </div>
   </div>
   <div class="abous-us">
-    <h2 class="about-us__title title-text">Коротко о нас</h2>
-    <article class="about-us__item item-description">
-      <img class="item-description__image" src="http://placehold.it/150x100" alt="">
-      <p class="item-description__text">Экологически чистые материалы</p>
-    </article>
-    <article class="about-us__item item-description">
-      <img class="item-description__image" src="http://placehold.it/150x100" alt="">
-      <p class="item-description__text">Скандинавский стиль по российской цене</p>
-    </article>
-    <article class="about-us__item item-description">
-      <img class="item-description__image" src="http://placehold.it/150x100" alt="">
-      <p class="item-description__text">Увеличивает лайки на фотогрфиях</p>
-    </article>
-    <article class="about-us__item item-description">
-      <img class="item-description__image" src="http://placehold.it/150x100" alt="">
-      <p class="item-description__text">Связано вручную с любовью и умилением</p>
-    </article>
-    <article class="about-us__item item-description">
-      <img class="item-description__image" src="http://placehold.it/150x100" alt="">
-      <p class="item-description__text">Поддержка отечественного производителя</p>
-    </article>
-    <article class="about-us__item item-description">
-      <img class="item-description__image" src="http://placehold.it/150x100" alt="">
-      <p class="item-description__text">Поставляются в подарочной упаковке</p>
-    </article>
+    <h2 class="title-text">Коротко о нас:</h2>
+    <ul class="about-us__list">
+      <li class="about-us__list-item">
+        Экологически чистые материалы
+      </li>
+      <li class="about-us__list-item">
+        Скандинавский стиль по российской цене
+      </li>
+      <li class="about-us__list-item">
+        Увеличивает лайки на фотогрфиях
+      </li>
+      <li class="about-us__list-item">
+        Связано вручную с любовью и умилением
+      </li>
+      <li class="about-us__list-item">
+        Поддержка отечественного производителя
+        < </li>
+          <li class="about-us__list-item">
+            Поставляются в подарочной упаковке
+          </li>
+    </ul>
   </div>
   <div class="reviews">
     <div class="reviews__wrapper slider">
-      <h2 class="reviews__title title-text">Отзывы</h2>
+      <h2 class="title-text">Отзывы</h2>
       <div class="review__list slider__list">
         <blockquote class="reviews__item slider__item">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
-            лайков!</p>
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не
+             набирали и близко такого количества лайков,
+             как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+             и игрушек в Мишке, и мои фотографии сразу стали более стильными,
+             а также набирают больше
+             лайков!
+          </p>
           <cite class="reviews__author-name">
-        Анастасия Красильникова
-        </cite>
-          <span class="reviews__author-adres">
-        @misssssiskras
-        </span>
+            Анастасия Красильникова
+          </cite>
+          <a class="reviews__author-adres">@misssssiskras</a>
         </blockquote>
-        <p class="reviews__toggle slider__toggle">
-          <button class="reviews__button-toggle button-prev" type="button" name="button">Предыдущий отзыв</button>
-          <button class="reviews__button-toggle button-next" type="button" name="button">Следующий отзыв</button>
-        </p>
-        <button class="button reviews__button" type="button" name="button">Написать</button>
+        <div class="reviews__toggle slider__toggle">
+          <a class="reviews__button-toggle button-prev">Предыдущий отзыв</a>
+          <a class="reviews__button-toggle button-next">Следующий отзыв</a>
+        </div>
+        <a class="button reviews__button" type="button" name="button">Написать</a>
       </div>
     </div>
   </div>
   <div class="contacts">
-    <h2 class="contacts-title title-text">Контакты</h2>
+    <h2 class="title-text">Контакты</h2>
     <div class="contacts__email">
       <span class="email">e-mail:</span>
-      <span class="email-value">info@mimimishkashop.ru</span>
+      <a href="mailto:info@mimimishkashop.ru" class="email-value">info@mimimishkashop.ru</a>
     </div>
     <div class="contacts__adress">
       <span class="adress">адрес:</span>
@@ -136,19 +134,17 @@
     <a class="button subscribe__button" href="#">Напишите нам</a>
   </div>
   <footer class="footer">
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">ВК</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy">ФБ</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--inst" href="https://instagram.com/htmlacademy">Инстаграм</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">ВК</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy">ФБ</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--inst" href="https://instagram.com/htmlacademy">Инстаграм</a>
+      </li>
+    </ul>
     <div class="copy">
       <span class="copy__text">Разработано</span>
       <a class="copy__img" href="https://htmlacademy.ru/intensive/adaptive">
@@ -171,7 +167,5 @@
       <button type="button" name="button" class="button modal__button">Добавить</button>
     </form>
   </div>
-
 </body>
-
 </html>
