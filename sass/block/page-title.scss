@@ -1,0 +1,23 @@
+.page-title
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 177px;
+  background: #f1f1f1;
+  &--index
+  {
+    height: 283px;
+    background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
+  }
+}
+.page-title__text
+{
+  font-family: "Opensansbold", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  width: 210px;
+
+}

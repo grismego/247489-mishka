@@ -1,0 +1,28 @@
+.site-list
+{
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-list__item
+{
+  text-align: center;
+  padding: 28px;
+  border-bottom: 1px solid #ececec;
+  &:first-child
+  {
+    border-top: 1px solid #ececec;
+  }
+  a
+  {
+      text-decoration: none;
+      font-family: "Opensansbold", "Arial", sans-serif;
+      color: #000000;
+      font-size: 17px;
+      line-height: 24px;
+  }
+}

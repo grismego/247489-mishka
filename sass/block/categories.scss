@@ -1,0 +1,32 @@
+.categories
+{
+  display: flex;
+  flex-direction: column;
+}
+.categories__item
+{
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &--light
+  {
+    background-color: #63d1bb;
+  }
+  &--dark
+  {
+    background-color: #56c3b2;
+  }
+}
+.categories__link
+{
+  font-family: $opensansbold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 50%;
+  text-decoration: none;
+
+}

@@ -1,0 +1,17 @@
+.character
+{
+  @include textnormal(15px, 20px);
+  color: #444444;
+  display: table;
+  width: 100%;
+  tr
+  {
+    border-bottom: 1px solid #ececec;
+    padding: 10px 0;
+    display: flex;
+  }
+  .character__title
+  {
+    width: 95px;
+  }
+}
