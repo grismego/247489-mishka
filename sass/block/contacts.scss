@@ -1,28 +1,25 @@
-.contacts
-{
+.contacts {
   display: flex;
   flex-direction: column;
-  @include  textnormal(15px, 30px);
+  @include textnormal(15px, 30px);
   color: $color-grey;
   // margin-bottom: 40px;
-  .title-text
-  {
+  .title-text {
     @include textbold(18px,30px);
   }
-  .contacts__email,
-  .contacts__adress
-  {
+
+  .contacts__adress,
+  .contacts__email {
     display: flex;
     flex-direction: row;
   }
-  .adress-value
-  {
-    margin: 0;
-    margin-left: 30px;
+
+  .adress-value {
+    margin: 0 0 0 30px;
     text-align: left;
   }
-  .email-value
-  {
+
+  .email-value {
     margin-left: 30px;
   }
 }

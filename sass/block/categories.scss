@@ -1,32 +1,30 @@
-.categories
-{
+.categories {
   display: flex;
   flex-direction: column;
 }
-.categories__item
-{
+
+.categories__item {
   width: 100%;
   padding: 25px;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &--light
-  {
+
+  &--light {
     background-color: #63d1bb;
   }
-  &--dark
-  {
+
+  &--dark {
     background-color: #56c3b2;
   }
 }
-.categories__link
-{
+
+.categories__link {
   font-family: $opensansbold;
   font-size: 19px;
   line-height: 24px;
   color: $color-white;
   width: 50%;
   text-decoration: none;
-
 }

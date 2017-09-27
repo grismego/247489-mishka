@@ -1,5 +1,4 @@
-.site-list
-{
+.site-list {
   display: none;
   flex-direction: column;
   background-color: $color-white;
@@ -7,21 +6,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  &--show
-  {
+
+  &--show {
     display: flex;
   }
-  .site-list__item
-  {
+
+  .site-list__item {
     text-align: center;
     padding: 28px;
     border-bottom: 1px solid $color-dark-grey;
-    &:first-child
-    {
+
+    &:first-child {
       border-top: 1px solid $color-dark-grey;
     }
-    a
-    {
+
+    a {
       text-decoration: none;
       font-family: $opensansbold;
       color: $color-black;

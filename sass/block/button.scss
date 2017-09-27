@@ -1,5 +1,4 @@
-.button
-{
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,25 +12,24 @@
   text-decoration: none;
   color: $color-grey;
   cursor: pointer;
-  &--prev,
-  &--next
-  {
+
+  &--next,
+  &--prev {
     width: 50%;
     border: 1px solid $color-dark-grey;
     font-size: 0;
   }
-  &--prev
-  {
-    background-image: url(../img/icon-left-arrow.svg);
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-right: 0px;
-  }
-  &--next
-  {
-    background-image: url(../img/icon-right-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    border-right: 0;
   }
 
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

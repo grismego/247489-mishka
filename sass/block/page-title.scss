@@ -1,5 +1,4 @@
-.page-title
-{
+.page-title {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,17 +6,16 @@
   text-align: center;
   padding: 50px;
   background: $color-light-grey;
-  &--index
-  {
+
+  &--index {
     padding: 55px;
     background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
   }
 }
-.page-title__text
-{
+
+.page-title__text {
   font-family: $opensansbold;
   font-size: 27px;
   line-height: 30px;
   width: 210px;
-
 }

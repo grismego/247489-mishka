@@ -1,21 +1,20 @@
-.video
-{
+.video {
   display: flex;
   flex-direction: column;
-  .video__title
-  {
+
+  .video__title {
     @include textbold(17px, 24px);
     color: $color-black;
     padding-left: 70px;
   }
-  .video__description
-  {
+
+  .video__description {
     @include textnormal(13px, 24px);
     color: $color-grey;
     padding: 0 30px;
   }
-  .video__button
-  {
+
+  .video__button {
     width: 200px;
     margin: 0 auto;
   }
