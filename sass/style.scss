@@ -1,5 +1,6 @@
 @import "general/normalize.scss";
 @import "general/mixsins.scss";
+@import "general/var.scss";
 @import "general/global.scss";
 @import "block/header.scss";
 @import "block/header-nav.scss";
@@ -17,4 +18,7 @@
 @import "block/copy.scss";
 @import "block/button.scss";
 @import "block/reviews.scss";
+@import "block/catalog.scss";
+@import "block/video.scss";
+@import "block/form.scss";
 @import "block/modal.scss";

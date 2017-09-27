@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
+  padding: 25px;
   .copy__text
   {
     @include textbold(19px, 18px);

@@ -5,17 +5,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 177px;
-  background: #f1f1f1;
+  padding: 50px;
+  background: $color-light-grey;
   &--index
   {
-    height: 283px;
+    padding: 55px;
     background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
   }
 }
 .page-title__text
 {
-  font-family: "Opensansbold", "Arial", sans-serif;
+  font-family: $opensansbold;
   font-size: 27px;
   line-height: 30px;
   width: 210px;

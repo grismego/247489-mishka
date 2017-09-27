@@ -5,27 +5,35 @@
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  min-height: 80px;
+  padding: 30px;
   position: relative;
-}
-.header-nav__logo
-{
-  margin-left: auto;
-}
-.header-nav__toggle
-{
-  background: url(../img/icon-menu-open.svg) no-repeat;
-  font-size: 0;
-  width: 20px;
-  height: 15px;
-  margin-left: auto;
-  cursor: pointer;
-}
-.header-nav__list
-{
+  .header-nav__logo
+  {
+    margin-left: auto;
+  }
+  .header-nav__toggle
+  {
 
-  position: absolute;
-  top: 80px;
-  left: 0;
-  z-index: 2;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    &--open
+    {
+      background: url(../img/icon-menu-open.svg) no-repeat;
+    }
+    &--close
+    {
+      background: url(../img/icon-menu-close.svg) no-repeat;
+    }
+  }
+  .header-nav__list
+  {
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 2;
+  }
 }

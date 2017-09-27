@@ -6,18 +6,18 @@
   {
     @include textbold(25px, 30px);
     margin-bottom: 5px;
-    color: #000;
+    color: $color-black;
   }
   .goods__category
   {
     @include textbold(17px, 20px);
-    color: #63d1bb;
+    color: $color-aqua;
     text-transform: uppercase;
   }
   .goods__description
   {
     @include textnormal(15px, 24px);
-    color: #444444;
+    color: $color-grey;
   }
   .goods__character
   {

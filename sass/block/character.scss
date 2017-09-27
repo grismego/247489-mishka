@@ -1,12 +1,12 @@
 .character
 {
   @include textnormal(15px, 20px);
-  color: #444444;
+  color: $color-grey;
   display: table;
   width: 100%;
   tr
   {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $color-dark-grey;
     padding: 10px 0;
     display: flex;
   }

@@ -8,7 +8,7 @@
   .reviews__text
   {
     @include textnormal(17px, 30px);
-    color: #444444;
+    color: $color-grey;
   }
   .reviews__author-name
   {
@@ -18,7 +18,7 @@
   .reviews__author-adres
   {
     @include textnormal(17px, 30px);
-    color: #444444;
+    color: $color-grey;
   }
   .reviews__toggle
   {

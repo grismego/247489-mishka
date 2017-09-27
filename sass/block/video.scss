@@ -1,0 +1,22 @@
+.video
+{
+  display: flex;
+  flex-direction: column;
+  .video__title
+  {
+    @include textbold(17px, 24px);
+    color: $color-black;
+    padding-left: 70px;
+  }
+  .video__description
+  {
+    @include textnormal(13px, 24px);
+    color: $color-grey;
+    padding: 0 30px;
+  }
+  .video__button
+  {
+    width: 200px;
+    margin: 0 auto;
+  }
+}

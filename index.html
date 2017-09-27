@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +14,7 @@
       <a href="index.html" class="header-nav__logo">
         <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA">
       </a>
-      <a class="header-nav__toggle">Октрыть меню</a>
+      <a class="header-nav__toggle header-nav__toggle--open">Октрыть меню</a>
       <ul class="header-nav__list site-list">
         <li class="site-list__item">
           <a href="catalog.html">Каталог товаров</a>
@@ -119,7 +120,7 @@
     </div>
     <div class="contacts__adress">
       <span class="adress">адрес:</span>
-      <p class="adress-value">г. Санкт-Петербург,  ул. Большая Конюшенная, д. 19/8, офис 101</p>
+      <p class="adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
     </div>
     <!-- =========Тут может тоже таблицей сделать?========== -->
   </div>
@@ -153,15 +154,15 @@
     <h2 class="modal__title">Добавить в корзину</h2>
     <span class="modal__option">Выберете размер:</span>
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="radio" name="radio-value" value="s" id="modal__radio-1">
-      <input type="radio" name="radio-value" value="m" id="modal__radio-2">
-      <input type="radio" name="radio-value" value="l" id="modal__radio-3">
+      <input type="radio" name="radio-value" value="small" id="modal__radio-1" checked>
+      <input type="radio" name="radio-value" value="middle" id="modal__radio-2">
+      <input type="radio" name="radio-value" value="large" id="modal__radio-3">
       <div class="modal__toggles">
         <label for="modal__radio-1" class="modal__toggle">s</label>
         <label for="modal__radio-2" class="modal__toggle">m</label>
         <label for="modal__radio-3" class="modal__toggle">l</label>
       </div>
-      <button type="button" name="button" class="button modal__button">Добавить</button>
+      <button type="submit" name="button" class="button modal__button">Добавить</button>
     </form>
   </div>
   <script src="js/javascript.js"></script>

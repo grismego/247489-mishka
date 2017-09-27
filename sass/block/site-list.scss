@@ -2,27 +2,31 @@
 {
   display: none;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: $color-white;
   width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.site-list__item
-{
-  text-align: center;
-  padding: 28px;
-  border-bottom: 1px solid #ececec;
-  &:first-child
+  &--show
   {
-    border-top: 1px solid #ececec;
+    display: flex;
   }
-  a
+  .site-list__item
   {
+    text-align: center;
+    padding: 28px;
+    border-bottom: 1px solid $color-dark-grey;
+    &:first-child
+    {
+      border-top: 1px solid $color-dark-grey;
+    }
+    a
+    {
       text-decoration: none;
-      font-family: "Opensansbold", "Arial", sans-serif;
-      color: #000000;
+      font-family: $opensansbold;
+      color: $color-black;
       font-size: 17px;
       line-height: 24px;
+    }
   }
 }

@@ -1,0 +1,38 @@
+.form
+{
+  display: flex;
+  flex-direction: column;
+  .form__text
+  {
+    @include textnormal(13px,24px);
+    color: $color-grey;
+    // padding: 0 30px;
+  }
+  .form__title
+  {
+    @include textbold(17px, 16px);
+    color: $color-aqua;
+    text-transform: uppercase;
+    padding-right: 20px;
+    // padding: 0;
+
+  }
+  .form__fieldset
+  {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    border-top:  1px solid $color-aqua;
+    margin-bottom: 20px;
+  }
+  .form__textarea
+  {
+    width: 100%;
+    resize: none;
+  }
+  .form__input
+  {
+    width: 100%;
+  }
+}
