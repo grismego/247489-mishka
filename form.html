@@ -42,33 +42,33 @@
         <legend class="form__title">
           Тип
         </legend>
-        <label for="form__type-interior">Аксессуар для интерьера</label>
-        <input type="radio" name="type" value="" id="form__type-interior" checked>
-        <label for="form__type-toys">Детская игрушка</label>
-        <input type="radio" name="type" value="" id="form__type-toys">
+        <input type="radio" name="type" value="" id="form__type-interior" checked class="form__hidden">
+        <label for="form__type-interior" class="form__label form__label--radiobutton">Аксессуар для интерьера</label>
+        <input type="radio" name="type" value="" id="form__type-toys" class="form__hidden">
+        <label for="form__type-toys" class="form__label form__label--radiobutton">Детская игрушка</label>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__title">Цвет</legend>
-        <label class="form__label-color" for="color-white">Белый</label>
-        <input type="checkbox" name="color" value="" id="color-white" checked>
-        <label class="form__label-color" for="color-grey">Серый</label>
-        <input type="checkbox" name="color" value="" id="color-grey" checked>
-        <label class="form__label-color" for="color-tiffany">&laquo;Тиффани&raquo;</label>
-        <input type="checkbox" name="color" value="" id="color-tiffany">
-        <label class="form__label-color" for="color-black">Черный</label>
-        <input type="checkbox" name="color" value="" id="color-black">
-        <label class="form__label-color" for="color-pink">Розовый</label>
-        <input type="checkbox" name="color" value="" id="color-pink">
-        <label class="form__label-color" for="color-orange">Оранжевый</label>
-        <input type="checkbox" name="color" value="" id="color-orange">
+        <input type="checkbox" name="color" value="" id="color-white" checked class="form__hidden">
+        <label class="form__label" for="color-white">Белый</label>
+        <input type="checkbox" name="color" value="" id="color-grey" checked class="form__hidden">
+        <label class="form__label" for="color-grey">Серый</label>
+        <input type="checkbox" name="color" value="" id="color-tiffany" class="form__hidden">
+        <label class="form__label" for="color-tiffany">&laquo;Тиффани&raquo;</label>
+        <input type="checkbox" name="color" value="" id="color-black" class="form__hidden">
+        <label class="form__label" for="color-black">Черный</label>
+        <input type="checkbox" name="color" value="" id="color-pink" class="form__hidden">
+        <label class="form__label" for="color-pink">Розовый</label>
+        <input type="checkbox" name="color" value="" id="color-orange" class="form__hidden">
+        <label class="form__label" for="color-orange">Оранжевый</label>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__title">Фио</legend>
-        <label for="form__input-name">Имя:</label>
+        <label for="form__input-name" class="form__label-name">Имя:</label>
         <input type="text" name="first-name" value="" required placeholder="введите ваше имя*" id="form__input-name" class="form__input">
-        <label for="form__input-last-name">Фамилия:</label>
+        <label for="form__input-last-name" class="form__label-name">Фамилия:</label>
         <input type="text" name="last-name" value="" required placeholder="Укажите фамилию*" id="form__input-last-name" class="form__input">
-        <label for="form__input-middle-name">Отчество:</label>
+        <label for="form__input-middle-name" class="form__label-name">Отчество:</label>
         <input type="text" name="middle-name" value="" placeholder="Отчество, если желаете" id="form__input-middle-name" class="form__input">
       </fieldset>
       <fieldset class="form__fieldset">

@@ -6,7 +6,6 @@
   {
     @include textnormal(13px,24px);
     color: $color-grey;
-    // padding: 0 30px;
   }
   .form__title
   {
@@ -14,8 +13,7 @@
     color: $color-aqua;
     text-transform: uppercase;
     padding-right: 20px;
-    // padding: 0;
-
+    margin-bottom: 10px;
   }
   .form__fieldset
   {
@@ -24,15 +22,78 @@
     border: none;
     padding: 0;
     border-top:  1px solid $color-aqua;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .form__textarea
   {
     width: 100%;
     resize: none;
+    border: 1px solid $color-black
   }
   .form__input
   {
     width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-black;
+    padding: 15px 0;
+    @include textnormal(17px, 18px);
+    color: $color-grey;
+  }
+  .form__hidden
+  {
+    display: none;
+  }
+  .form__label
+  {
+    padding-left: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    @include textbold(17px, 18px);
+    color: $color-black;
+    position: relative;
+    display:b;
+  }
+    input[type="checkbox"]+label::before
+  {
+    content: "";
+    position: relative;
+    left: -50px;
+    top:-8px;
+    display: inline-block;
+    vertical-align: top;
+    height:39px;
+    width: 39px;
+    border: 1px solid;
+  }
+  input[type="checkbox"]:checked+label::before
+  {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  }
+  input[type="radio"]+label::before
+  {
+  content: "";
+  position: relative;
+  left: -50px;
+  top:-8px;
+  display: inline-block;
+  vertical-align: top;
+  height:39px;
+  width: 39px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid;
+  }
+  .form__label-name
+  {
+    @include textbold(17px, 18px);
+    color: $color-black
+  }
+  .form__annotation
+  {
+    @include textnormal(14px,16px);
+    color: color-grey;
   }
 }
