@@ -31,9 +31,10 @@
     padding: 15px;
     border: 2px solid $color-dark-grey;
     text-align: center;
-    @include textbold(17px, 16px);
     text-transform: uppercase;
     cursor: pointer;
+
+    @include textbold(17px, 16px);
   }
 
   .modal__button {

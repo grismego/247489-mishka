@@ -1,9 +1,10 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  @include textnormal(15px, 30px);
   color: $color-grey;
-  // margin-bottom: 40px;
+
+  @include textnormal(15px, 30px);
+
   .title-text {
     @include textbold(18px,30px);
   }

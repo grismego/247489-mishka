@@ -35,8 +35,9 @@
     border: none;
     border-bottom: 1px solid $color-black;
     padding: 15px 0;
-    @include textnormal(17px, 18px);
     color: $color-grey;
+
+    @include textnormal(17px, 18px);
   }
 
   .form__hidden {
@@ -47,13 +48,13 @@
     padding-left: 60px;
     padding-bottom: 20px;
     padding-top: 20px;
-    @include textbold(17px, 18px);
     color: $color-black;
     position: relative;
-    display: b;
+    // display: b;
+    @include textbold(17px, 18px);
   }
 
-  input[type="checkbox"]+label::before {
+  input[type="checkbox"] + label::before {
     content: "";
     position: relative;
     left: -50px;
@@ -65,14 +66,14 @@
     border: 1px solid;
   }
 
-  input[type="checkbox"]:checked+label::before {
+  input[type="checkbox"]:checked + label::before {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
   }
 
-  input[type="radio"]+label::before {
+  input[type="radio"] + label::before {
     content: "";
     position: relative;
     left: -50px;
