@@ -1,0 +1,44 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .catalog__item {
+    border: 1px solid #ededed;
+  }
+
+  .catalog__link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: $color-black;
+  }
+
+  .catalog__image {
+    border-bottom: 1px solid #ededed;
+  }
+
+  .catalog__title {
+    @include textbold(17px, 24px);
+    text-align: center;
+  }
+
+  .catalog__features {
+    @include textnormal(13px, 30px);
+    color: $color-grey;
+    padding-left: 30px;
+  }
+
+  .catalog__price {
+    display: flex;
+    width: 205px;
+    margin: 0 auto;
+    border-top: 1px solid #ededed;
+    padding: 14px;
+  }
+
+  .catalog__price-value {
+    @include textbold(15px, 24px);
+  }
+}

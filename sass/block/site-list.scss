@@ -1,0 +1,31 @@
+.site-list {
+  display: none;
+  flex-direction: column;
+  background-color: $color-white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--show {
+    display: flex;
+  }
+
+  .site-list__item {
+    text-align: center;
+    padding: 28px;
+    border-bottom: 1px solid $color-dark-grey;
+
+    &:first-child {
+      border-top: 1px solid $color-dark-grey;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $opensansbold;
+      color: $color-black;
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+}

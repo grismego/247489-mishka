@@ -1,0 +1,30 @@
+.goods {
+  display: flex;
+  flex-direction: column;
+
+  .goods__title {
+    @include textbold(25px, 30px);
+    margin-bottom: 5px;
+    color: $color-black;
+  }
+
+  .goods__category {
+    @include textbold(17px, 20px);
+    color: $color-aqua;
+    text-transform: uppercase;
+  }
+
+  .goods__description {
+    @include textnormal(15px, 24px);
+    color: $color-grey;
+  }
+
+  .goods__character {
+    display: flex;
+  }
+
+  .goods__price {
+    @include textbold(17px, 24px);
+    text-align: center;
+  }
+}

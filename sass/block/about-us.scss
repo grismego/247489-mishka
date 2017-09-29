@@ -1,0 +1,16 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+
+  .about-us__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .about-us__list-item {
+    @include textbold(17px, 20px);
+    padding-top: 70px;
+    width: 100%;
+  }
+}

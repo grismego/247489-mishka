@@ -1,0 +1,35 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  padding: 13px;
+  border: 2px solid $color-grey;
+  font-family: $opensansbold;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $color-grey;
+  cursor: pointer;
+
+  &--next,
+  &--prev {
+    width: 50%;
+    border: 1px solid $color-dark-grey;
+    font-size: 0;
+  }
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-right: 0;
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

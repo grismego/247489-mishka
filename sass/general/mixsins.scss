@@ -1,0 +1,11 @@
+@mixin textbold ($font-size, $line-height) {
+  font-family: "Opensansbold", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin textnormal ($font-size, $line-height) {
+  font-family: "Opensans", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}

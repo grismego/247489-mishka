@@ -1,0 +1,16 @@
+.character {
+  @include textnormal(15px, 20px);
+  color: $color-grey;
+  display: table;
+  width: 100%;
+
+  tr {
+    border-bottom: 1px solid $color-dark-grey;
+    padding: 10px 0;
+    display: flex;
+  }
+
+  .character__title {
+    width: 95px;
+  }
+}

@@ -1,0 +1,11 @@
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+
+  .copy__text {
+    @include textbold(19px, 18px);
+    margin-right: 20px;
+  }
+}

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="header">
-    <nav class="header-nav">
+    <nav class="header-nav container">
       <a href="index.html" class="header-nav__logo">
-        <img class="header-nav__logo-image" src="http://placehold.it/150x100" alt="MISHKA" width="88" height="35">
+        <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA">
       </a>
-      <a class="header-nav__toogle">Октрыть меню</a>
+      <a class="header-nav__toggle header-nav__toggle--open">Октрыть меню</a>
       <ul class="header-nav__list site-list">
         <li class="site-list__item">
           <a href="catalog.html">Каталог товаров</a>
@@ -30,10 +33,10 @@
   <div class="page-title">
     <h1 class="page-title__text">Каталог товаров</h1>
   </div>
-  <div class="catalog">
+  <div class="catalog container">
     <article class="catalog__item">
-      <a class="catolog__link" href="#">
-      <img class="catalog__image" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+      <a class="catalog__link" href="#">
+      <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
       </a>
       <h2 class="catalog__title">
         <a class="catalog__link" href="#">Зайчик попрыгайчик</a>
@@ -41,12 +44,12 @@
       <p class="catalog__features">Рост: 30 см, вес 200г.</p>
       <div class="catalog__price">
         <span class="catalog__price-value">1200 руб.</span>
-        <a class="catalog__price-cart">добавить в корзину</a>
+        <a class="catalog__price-cart">в корзину</a>
       </div>
     </article>
     <article class="catalog__item">
-      <a class="catolog__link" href="#">
-      <img class="catalog__image" src="http://placehold.it/150x100" alt="Корзинка для белья">
+      <a class="catalog__link" href="#">
+      <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
       <h2 class="catalog__title">Корзинка для белья</h2>
       </a>
       <p class="catalog__features">Рост: 15 см, высота 10 см</p>
@@ -56,8 +59,8 @@
       </div>
     </article>
     <article class="catalog__item">
-      <a class="catolog__link" href="#">
-      <img class="catalog__image" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+      <a class="catalog__link" href="#">
+      <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
       <h2 class="catalog__title">Большая корзинка для игрушек</h2>
       </a>
       <p class="catalog__features">Диаметр: 30 см, высота 30 см</p>
@@ -69,14 +72,14 @@
     <div class="video">
       <h2 class="video__title">Процесс производства</h2>
       <div class="video__container">
-        <img class="video__image image-button" src="http://placehold.it/150x100" alt="">
+        <img class="video__image image-button" src="img/video-mobile@1x.jpg" alt="" width="260" height="150">
       </div>
       <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
       <a class="button video__button">Сделать заказ</a>
     </div>
   </div>
   <footer class="footer">
-    <ul class="social">
+    <ul class="social container">
       <li class="social__item">
         <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">ВК</a>
       </li>
@@ -87,10 +90,10 @@
         <a class="social__link social__link--inst" href="https://instagram.com/htmlacademy">Инстаграм</a>
       </li>
     </ul>
-    <div class="copy">
+    <div class="copy container">
       <span class="copy__text">Разработано</span>
       <a class="copy__img" href="https://htmlacademy.ru/intensive/adaptive">
-      <img  src="http://placehold.it/150x100" alt="htmlacademy.ru">
+      <img  src="img/logo-htmlacademy.svg" alt="htmlacademy.ru">
       </a>
     </div>
   </footer>
@@ -98,9 +101,9 @@
     <h2 class="modal__title">Добавить в корзину</h2>
     <span class="modal__option">Выберете размер</span>
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="radio" name="radio-value" value="s" id="modal__radio-1">
-      <input type="radio" name="radio-value" value="m" id="modal__radio-2">
-      <input type="radio" name="radio-value" value="l" id="modal__radio-3">
+      <input type="radio" name="radio-value" value="small" id="modal__radio-1">
+      <input type="radio" name="radio-value" value="middle" id="modal__radio-2">
+      <input type="radio" name="radio-value" value="large" id="modal__radio-3">
       <div class="modal__toggles">
         <label for="modal__radio-1" class="modal__toggle">s</label>
         <label for="modal__radio-2" class="modal__toggle">m</label>
@@ -109,6 +112,7 @@
       <button class="button modal__button" type="submit" name="button"></button>
     </form>
   </div>
+  <script src="js/javascript.js"></script>
 </body>
 
 </html>

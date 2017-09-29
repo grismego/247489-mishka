@@ -1,0 +1,26 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  color: $color-grey;
+
+  @include textnormal(15px, 30px);
+
+  .title-text {
+    @include textbold(18px,30px);
+  }
+
+  .contacts__adress,
+  .contacts__email {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .adress-value {
+    margin: 0 0 0 30px;
+    text-align: left;
+  }
+
+  .email-value {
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,26 @@
+.reviews {
+  .reviews__item {
+    margin: 0 0 40px;
+  }
+
+  .reviews__text {
+    @include textnormal(17px, 30px);
+    color: $color-grey;
+  }
+
+  .reviews__author-name {
+    @include textbold(17px, 30px);
+    font-style: normal;
+  }
+
+  .reviews__author-adres {
+    @include textnormal(17px, 30px);
+    color: $color-grey;
+  }
+
+  .reviews__toggle {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+}
