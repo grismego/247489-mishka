@@ -2,20 +2,65 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $desktop-width) {
+    height: 400px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+  }
+
   .video__title {
     @include textbold(17px, 24px);
     color: $color-black;
     padding-left: 70px;
+
+    @media (min-width: $desktop-width) {
+      width: 200px;
+      padding: 0;
+    }
+  }
+
+  .video__description-text {
+    @include textnormal(13px, 24px);
+    color: $color-grey;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+
+      @include textnormal(15px, 30px);
+    }
   }
 
   .video__description {
-    @include textnormal(13px, 24px);
-    color: $color-grey;
-    padding: 0 30px;
+    @media (min-width: $tablet-width) {
+      padding: 0 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+      padding: 0;
+    }
+  }
+
+  .video__container {
+    align-self: center;
+
+    @media (min-width: $desktop-width) {
+      order: 1;
+      width: 682px;
+      height: 455px;
+    }
   }
 
   .video__button {
     width: 200px;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+    }
   }
 }

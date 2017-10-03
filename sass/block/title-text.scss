@@ -1,0 +1,7 @@
+.title-text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include textbold(43px, 50px);
+  }
+}
