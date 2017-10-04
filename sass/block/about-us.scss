@@ -1,19 +1,43 @@
 .about-us {
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-  }
+  // display: flex;
+  // padding: 0 30px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 223px;
+  // @media (min-width: $tablet-width) {
+  //   padding: 0 50px;
+  // }
+  //
+  // @media (min-width: $desktop-width) {
+  //   margin: 0 auto;
+  //   width: 100%;
+  //   padding-left: 223px;
+  //
+  //   // padding: 0;
+  //   // padding-left: 170px;
+  // }
 
-    // padding: 0;
-    // padding-left: 170px;
+  .about-us__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      width: 100%;
+      padding: 0;
+      padding-left: 174px;
+      max-width: 1050px;
+
+      // padding: 0;
+      // padding-left: 170px;
+    }
   }
 
   .about-us__list {

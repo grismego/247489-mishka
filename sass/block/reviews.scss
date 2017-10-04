@@ -1,28 +1,24 @@
 .reviews {
-  padding: 0 30px;
+  width: 100%;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    width: 1050px;
-    padding-left: 170px;
-    margin: 0 auto;
-  }
 
   .reviews__wrapper {
     display: flex;
     flex-direction: column;
+    padding: 0 30px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
+      padding: 0 50px;
       flex-wrap: wrap;
     }
 
     @media (min-width: $desktop-width) {
       // padding-left: 176px;
+      padding: 0;
+      padding-left: 174px;
+      width: 1050px;
     }
   }
 

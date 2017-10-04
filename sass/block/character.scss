@@ -2,11 +2,13 @@
   @include textnormal(15px, 20px);
   color: $color-grey;
   display: flex;
+  padding: 20px 0;
 
-  tr {
+  .character__row {
     border-bottom: 1px solid $color-dark-grey;
     padding: 10px 0;
     display: flex;
+    width: 260px;
   }
 
   .character__title {

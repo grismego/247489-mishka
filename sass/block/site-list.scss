@@ -21,10 +21,14 @@
     display: flex;
   }
 
+  &--no-js {
+    display: flex;
+  }
+
   .site-list__item {
-    text-align: center;
+    // text-align: center;
     border-bottom: 1px solid $color-dark-grey;
-    padding: 15px;
+    // padding: 15px;
 
     &--logo {
       display: none;
@@ -96,8 +100,12 @@
     }
 
     &:nth-child(2) {
+      border-top: 1px solid $color-dark-grey;
+
       @media (min-width: $desktop-width) {
+        border-top: none;
         border-right: 1px solid $color-dark-grey;
+        padding-right: 30px;
       }
     }
   }
@@ -109,6 +117,8 @@
     font-size: 17px;
     line-height: 24px;
     padding: 20px 0;
+    padding-left: 70px;
+    display: block;
 
 
     &--search {
@@ -132,7 +142,8 @@
 
     @media (min-width: $tablet-width) {
       display: inline-flex;
-      padding-right: 20px;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
