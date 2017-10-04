@@ -4,18 +4,29 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 50px;
+  // padding: 50px;
+  padding: 70px 0;
+  position: relative;
   background: $color-light-grey;
 
-  &--index {
-    padding: 55px;
-    background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
-  }
-}
 
-.page-title__text {
-  font-family: $opensansbold;
-  font-size: 27px;
-  line-height: 30px;
-  width: 210px;
+  &--index {
+    // padding: 55px;
+    background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
+    background-size: cover;
+  }
+
+  .page-title__text {
+    @include textbold(27px, 30px);
+    width: 210px;
+
+    @media (min-width: $tablet-width) {
+      @include textbold(43px, 50px);
+      width: auto;
+
+      &--index {
+        // width: 460px;
+      }
+    }
+  }
 }

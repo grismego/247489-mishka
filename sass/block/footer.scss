@@ -1,3 +1,37 @@
 .footer {
   background: $color-light-grey;
+
+  // display: none;
+
+  @media (min-width: $tablet-width) {
+    visibility: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    visibility: visible;
+  }
+
+  .footer__logo {
+    width: 110px;
+    border: 1px solid black;
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
+  .footer__wrapper {
+    // width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      max-width: 1150px;
+      padding: 0 50px;
+      flex-direction: row;
+    }
+  }
 }

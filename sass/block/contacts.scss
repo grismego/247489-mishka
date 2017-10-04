@@ -2,17 +2,80 @@
   display: flex;
   flex-direction: column;
   color: $color-grey;
+  // padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    /* padding-left: 176px; */
+    height: 460px;
+    /* width: 100%; */
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 170px;
+  }
 
   @include textnormal(15px, 30px);
-
-  .title-text {
-    @include textbold(18px,30px);
-  }
 
   .contacts__adress,
   .contacts__email {
     display: flex;
     flex-direction: row;
+    padding: 0 30px;
+    // padding: 0 30px;
+
+    @include textnormal(15px, 30px);
+
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      align-items: flex-start;
+      padding: 0;
+    }
+  }
+
+  .contacts__adress {
+    @media (min-width: $tablet-width) {
+      padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 300px;
+    }
+  }
+
+  .contacts__email {
+    @media (min-width: $tablet-width) {
+      padding-left: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 300px;
+    }
+  }
+
+  .contacts__title {
+    width: 100%;
+    padding: 0 30px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      width: 300px;
+    }
+    // padding: 0 30px;
   }
 
   .adress-value {
@@ -22,5 +85,41 @@
 
   .email-value {
     margin-left: 30px;
+    text-decoration: none;
+    border-bottom: 1px solid $color-aqua;
+    color: $color-grey;
+    width: auto;
+  }
+
+  .contacts__maps {
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      width: 525px;
+      height: 457px;
+      order: 1;
+    }
+  }
+
+  .contacts__maps-iframe {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .contact__button-wrap {
+    margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      // margin-left: 97px;
+    }
   }
 }

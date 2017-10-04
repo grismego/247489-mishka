@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 25px 0;
 
   .copy__text {
     @include textbold(19px, 18px);

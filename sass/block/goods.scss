@@ -1,30 +1,134 @@
 .goods {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+  }
+
 
   .goods__title {
     @include textbold(25px, 30px);
     margin-bottom: 5px;
+    margin-top: 0;
     color: $color-black;
+
+    @media (min-width: $tablet-width) {
+      @include textbold(43px, 50px);
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 70px;
+    }
   }
 
   .goods__category {
     @include textbold(17px, 20px);
     color: $color-aqua;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-left: auto;
+      align-self: baseline;
+      width: 86px;
+      text-align: center;
+      margin-right: 15px;
+
+      @include textbold(17px, 17px);
+      margin-top: 12px;
+
+      @media (min-width: $desktop-width) {
+        margin-left: 0;
+      }
+    }
   }
 
   .goods__description {
     @include textnormal(15px, 24px);
     color: $color-grey;
+
+    @media (min-width: $tablet-width) {
+      width: 44%;
+
+      @include textnormal(17px, 30px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 292px;
+    }
   }
 
   .goods__character {
     display: flex;
+
+    @media (min-width: $tablet-width) {
+      width: 44%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 292px;
+    }
   }
 
   .goods__price {
     @include textbold(17px, 24px);
     text-align: center;
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+      width: 40%;
+      display: block;
+      text-align: center;
+
+      @include textbold(20px, 24px);
+
+      @media (min-width: $desktop-width) {
+        margin-left: 0;
+        width: 292px;
+      }
+    }
+  }
+
+  .goods__button {
+    @media (min-width: $desktop-width) {
+      width: 292px;
+    }
+  }
+
+  .goods__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      max-height: 600px;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 176px;
+    }
+  }
+
+  .goods__image {
+    align-self: center;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+      margin-left: auto;
+      width: 333px;
+      height: 404px;
+    }
   }
 }

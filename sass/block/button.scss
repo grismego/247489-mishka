@@ -18,6 +18,10 @@
     width: 50%;
     border: 1px solid $color-dark-grey;
     font-size: 0;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   &--prev {

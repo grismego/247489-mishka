@@ -1,8 +1,7 @@
 .character {
   @include textnormal(15px, 20px);
   color: $color-grey;
-  display: table;
-  width: 100%;
+  display: flex;
 
   tr {
     border-bottom: 1px solid $color-dark-grey;
