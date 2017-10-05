@@ -17,7 +17,7 @@
 
   .header-nav__logo {
     margin-left: auto;
-    width: 100px;
+    width: 88px;
     height: 40px;
     display: block;
     background: url("../img/logo-mobile.svg") no-repeat;
@@ -78,4 +78,8 @@
       position: static;
     }
   }
+}
+
+#map {
+  height: 100%;
 }

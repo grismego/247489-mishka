@@ -1,6 +1,12 @@
 .reviews {
   width: 100%;
+  padding: 35px 0;
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
 
   .reviews__wrapper {
     display: flex;

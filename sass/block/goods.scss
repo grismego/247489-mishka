@@ -112,7 +112,7 @@
   .goods__price {
     @include textbold(17px, 24px);
     text-align: center;
-    display: flex;
+    color: $color-grey;
 
     @media (min-width: $tablet-width) {
       width: 40%;
@@ -138,10 +138,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     width: 100%;
 
     @media (min-width: $tablet-width) {
       max-height: 600px;
+      align-items: baseline;
       justify-content: space-between;
     }
 

@@ -37,6 +37,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
+
     &--light {
       background-color: #63d1bb;
     }
@@ -45,6 +49,7 @@
       background-color: #56c3b2;
     }
   }
+
 
   .categories__link {
     font-family: $opensansbold;
@@ -57,7 +62,11 @@
     text-decoration: none;
 
     @media (min-width: $tablet-width) {
-      padding: 25px;
+      padding: 25px 200px 25px 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 25px 340px 25px 25px;
     }
   }
 }

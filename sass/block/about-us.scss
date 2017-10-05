@@ -6,18 +6,6 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  // @media (min-width: $tablet-width) {
-  //   padding: 0 50px;
-  // }
-  //
-  // @media (min-width: $desktop-width) {
-  //   margin: 0 auto;
-  //   width: 100%;
-  //   padding-left: 223px;
-  //
-  //   // padding: 0;
-  //   // padding-left: 170px;
-  // }
 
   .about-us__wrapper {
     display: flex;
@@ -61,6 +49,7 @@
 
     @media (min-width: $tablet-width) {
       @include textbold(20px, 22px);
+      min-height: 115px;
       width: 45%;
     }
   }

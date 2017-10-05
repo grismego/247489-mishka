@@ -7,6 +7,14 @@
   padding: 0;
   list-style: none;
 
+  &--show {
+    display: flex;
+  }
+
+  &--no-js {
+    display: flex;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -17,18 +25,8 @@
     justify-content: space-between;
   }
 
-  &--show {
-    display: flex;
-  }
-
-  &--no-js {
-    display: flex;
-  }
-
   .site-list__item {
-    // text-align: center;
     border-bottom: 1px solid $color-dark-grey;
-    // padding: 15px;
 
     &--logo {
       display: none;
@@ -44,8 +42,6 @@
       border: none;
 
       &--cart {
-        padding-left: 80px;
-
         @media (min-width: $desktop-width) {
           order: 3;
         }
@@ -55,7 +51,6 @@
         margin-left: auto;
         border-left: 1px solid $color-dark-grey;
         border-right: 1px solid $color-dark-grey;
-        padding: 0 15px;
 
         @media (min-width: $desktop-width) {
           order: 2;
@@ -74,7 +69,6 @@
 
         &--search {
           margin-left: 0;
-          padding: 0 15px;
         }
       }
     }
@@ -105,7 +99,6 @@
       @media (min-width: $desktop-width) {
         border-top: none;
         border-right: 1px solid $color-dark-grey;
-        padding-right: 30px;
       }
     }
   }
@@ -116,16 +109,23 @@
     color: $color-black;
     font-size: 17px;
     line-height: 24px;
-    padding: 20px 0;
+    padding: 28px 0;
     padding-left: 70px;
     display: block;
 
+    @media (min-width: $tablet-width) {
+      display: inline-flex;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-right: 35px;
+    }
 
     &--search {
       @media (min-width: $tablet-width) {
         font-size: 0;
-        width: 40px;
-        // height: 40px;
+        width: 84px;
         display: flex;
         background-image: url("../img/icon-search.svg");
         background-repeat: no-repeat;
@@ -137,13 +137,9 @@
       @media (min-width: $tablet-width) {
         display: flex;
         margin-left: auto;
+        padding-left: 84px;
+        padding-right: 0;
       }
-    }
-
-    @media (min-width: $tablet-width) {
-      display: inline-flex;
-      padding-right: 0;
-      padding-left: 0;
     }
   }
 }
