@@ -5,12 +5,14 @@
 
   .form__fieldset {
     width: 100%;
+    padding: 15px 0;
     // padding: 0 30px;
 
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
       align-items: baseline;
+      padding: 50px 0;
 
       &:nth-child(even) {
         background-color: $color-light-grey;
@@ -43,9 +45,8 @@
     // padding: 0 30px;
     align-items: flex-start;
 
-    &--names {
-      display: flex;
-      width: 100%;
+    &--contacts {
+      margin-bottom: 10px;
     }
 
     @media (min-width: $tablet-width) {
@@ -65,11 +66,23 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        align-items: baseline;
       }
     }
 
     @media (min-width: $desktop-width) {
       margin-left: 0;
+    }
+  }
+
+  .form__wrapper-names {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      align-items: center;
     }
   }
 
@@ -185,6 +198,13 @@
 
   .form__input {
     width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-black;
+    padding: 9px 0;
+    background: inherit;
+    color: $color-grey;
+
+    @include textnormal(17px, 18px);
 
     &--phone {
       order: 1;
@@ -196,11 +216,11 @@
 
     @media (min-width: $tablet-width) {
       &--phone {
-        margin-left: 70px;
+        margin-left: 80px;
       }
 
       &--email {
-        margin-left: 70px;
+        margin-left: 80px;
       }
     }
 
@@ -225,6 +245,8 @@
 
   .form__textarea {
     width: 100%;
+    border: 1px solid $color-grey;
+    padding: 10px 15px;
   }
 
   .form__button {
@@ -271,5 +293,22 @@
     width: 39px;
     border-radius: 50%;
     border: 1px solid black;
+  }
+
+  input[type="radio"] + label::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 16px;
+    display: none;
+    vertical-align: top;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: $color-aqua;
+  }
+
+  input[type="radio"]:checked + label::after {
+    display: inline-block;
   }
 }

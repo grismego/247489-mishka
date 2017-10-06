@@ -36,6 +36,7 @@
     @media (min-width: $tablet-width) {
       @include textbold(43px, 50px);
       width: 82%;
+      padding-bottom: 90px;
       text-align: center;
       align-self: center;
     }
@@ -50,6 +51,7 @@
     &--index {
       padding-top: 70px;
       padding-bottom: 120px;
+
       @media (min-width: $tablet-width) {
         padding-top: 105px;
         padding-bottom: 370px;
@@ -61,6 +63,5 @@
         width: 75%;
       }
     }
-
   }
 }
