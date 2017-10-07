@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  // padding: 50px;
-  padding: 70px 0;
+  padding-top: 68px;
+  padding-bottom: 92px;
   position: relative;
   background: $color-light-grey;
 
@@ -19,6 +19,7 @@
   .page-title__text {
     @include textbold(27px, 30px);
     width: 210px;
+    margin: 0;
 
     @media (min-width: $tablet-width) {
       @include textbold(43px, 50px);

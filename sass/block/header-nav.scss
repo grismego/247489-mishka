@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  padding: 20px;
+  padding: 21px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -16,8 +16,8 @@
   }
 
   .header-nav__logo {
-    margin-left: auto;
-    width: 100px;
+    margin-left: 96px;
+    width: 88px;
     height: 40px;
     display: block;
     background: url("../img/logo-mobile.svg") no-repeat;
@@ -41,6 +41,7 @@
     width: 20px;
     height: 20px;
     margin-left: auto;
+    margin-right: 12px;
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
