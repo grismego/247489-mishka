@@ -6,7 +6,7 @@
   width: 100%;
   // padding: 30px 30px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
     // padding: 0 50px;
@@ -19,6 +19,8 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     width: 100%;
+    padding-top: 138px;
+    padding-bottom: 90px;
     // margin: 0 auto;
   }
 
@@ -57,7 +59,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 70px;
+      @include textbold(53px, 57px);
+      margin-left: 29px;
+      margin-top: -3px;
     }
   }
 
@@ -68,6 +72,7 @@
 
     @media (min-width: $tablet-width) {
       margin-left: auto;
+      padding-right: 11px;
       align-self: baseline;
       width: 86px;
       text-align: center;
@@ -77,7 +82,7 @@
       margin-top: 12px;
 
       @media (min-width: $desktop-width) {
-        margin-left: 0;
+        margin-left: 45px;
       }
     }
   }
@@ -85,15 +90,20 @@
   .goods__description {
     @include textnormal(15px, 24px);
     color: $color-grey;
+    margin-top: 20px;
+    margin-bottom: 16px;
 
     @media (min-width: $tablet-width) {
       width: 44%;
+      margin-top: 43px;
+      margin-bottom: 32px;
 
       @include textnormal(17px, 30px);
     }
 
     @media (min-width: $desktop-width) {
       width: 292px;
+      margin-bottom: 44px;
     }
   }
 
@@ -113,22 +123,34 @@
     @include textbold(17px, 24px);
     text-align: center;
     color: $color-grey;
+    margin-top: 25px;
+    margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       width: 40%;
       display: block;
       text-align: center;
+      margin-left: 10px;
+      margin-top: 30px;
 
       @include textbold(20px, 24px);
 
       @media (min-width: $desktop-width) {
         margin-left: 0;
+        margin-top: 83px;
         width: 292px;
       }
     }
   }
 
   .goods__button {
+    @media (min-width: $tablet-width) {
+
+      margin-top: 10px;
+      padding: 11px;
+      width: 291px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 292px;
     }

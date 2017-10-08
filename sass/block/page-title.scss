@@ -17,7 +17,7 @@
 
   &--index {
     background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
-    background-size: cover;
+    // background-size: cover;
     // min-height: 283px;
 
     @media (min-width: $tablet-width) {
@@ -28,7 +28,8 @@
   .page-title__text {
     @include textbold(27px, 30px);
     width: 260px;
-    padding: 63px 0;
+    padding-top: 67px;
+    padding-bottom: 75px;
     margin: auto 0;
     text-align: center;
     align-self: center;
@@ -36,7 +37,8 @@
     @media (min-width: $tablet-width) {
       @include textbold(43px, 50px);
       width: 82%;
-      padding-bottom: 90px;
+      padding-top: 45px;
+      padding-bottom: 70px;
       text-align: center;
       align-self: center;
     }
@@ -58,7 +60,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        padding-top: 120px;
+        padding-top: 100px;
         padding-bottom: 360px;
         width: 75%;
       }

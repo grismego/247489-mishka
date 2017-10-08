@@ -4,6 +4,15 @@
   width: 100%;
   padding: 35px 0;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 102px;
+  }
+
 
   .contacts__wrapper {
     display: flex;
@@ -18,7 +27,8 @@
 
     @media (min-width: $desktop-width) {
       flex-direction: column;
-      height: 460px;
+      // min-height: 460px;
+      // max-height: 500px;
       width: 1050px;
       margin: 0 auto;
       padding-left: 170px;
@@ -41,6 +51,8 @@
       width: 50%;
       align-items: flex-start;
       padding: 0;
+
+      @include textnormal(17px, 30px);
     }
   }
 
@@ -57,6 +69,8 @@
   }
 
   .contacts__email {
+    margin-bottom: 29px;
+
     @media (min-width: $tablet-width) {
       padding-left: 50px;
     }
@@ -64,6 +78,7 @@
     @media (min-width: $desktop-width) {
       padding-left: 0;
       padding-right: 0;
+      margin-bottom: 30px;
       width: 300px;
     }
   }
@@ -71,21 +86,23 @@
   .contacts__title {
     width: 100%;
     padding: 0 30px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
 
     @include textbold(18px, 30px);
     color: $color-black;
 
     @media (min-width: $tablet-width) {
       padding-left: 50px;
+      margin-bottom: 48px;
 
       @include textbold(43px, 50px);
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
-      margin-top: 70px;
+      margin-top: 109px;
       width: 300px;
+      margin-bottom: 49px;
 
       @include textbold(53px, 57px);
     }
@@ -93,7 +110,7 @@
   }
 
   .adress-value {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 26px;
     text-align: left;
   }
 
@@ -103,15 +120,28 @@
     border-bottom: 1px solid $color-aqua;
     color: $color-grey;
     width: auto;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 23px;
+    }
   }
 
   .contacts__maps {
     width: 100%;
+    margin-top: 17px;
+
+
+    @media (min-width: $tablet-width) {
+      margin-top: 38px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 525px;
       height: 457px;
       order: 1;
+      margin-left: auto;
+      display: block;
+      margin-top: -457px;
     }
   }
 
@@ -130,11 +160,28 @@
   }
 
   .contact__button-wrap {
-    margin: 20px auto;
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-top: 44px;
+      // margin-left: 97px;
+    }
 
     @media (min-width: $desktop-width) {
-      margin: 0;
+      margin-top: 57px;
       // margin-left: 97px;
+    }
+  }
+
+  .contact__button {
+    font-size: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+      width: 229px;
     }
   }
 }

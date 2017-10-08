@@ -3,8 +3,12 @@
   // display: flex;
   // padding: 0 30px;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 37px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+  }
 
 
   .about-us__wrapper {
@@ -34,23 +38,31 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 
     @media (min-width: $tablet-width) {
       flex-direction: column;
       flex-wrap: wrap;
-      max-height: 350px;
+      margin-top: 45px;
+      max-height: 535px;
     }
   }
 
   .about-us__list-item {
     @include textbold(17px, 20px);
-    padding-top: 70px;
+    padding-top: 58px;
+    margin-bottom: 25px;
     text-align: left;
 
     @media (min-width: $tablet-width) {
       @include textbold(20px, 22px);
       min-height: 115px;
+      margin-bottom: 40px;
       width: 45%;
+    }
+
+    @media (min-width: $desktop-width) {
+      // width: 240px;
     }
   }
 }

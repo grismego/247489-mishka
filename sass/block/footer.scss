@@ -1,10 +1,11 @@
 .footer {
   background: $color-light-grey;
 
-  // display: none;
 
-  @media (min-width: $tablet-width) {
-    visibility: hidden;
+  &--hiden {
+    @media (min-width: $tablet-width) {
+      visibility: hidden;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +17,7 @@
     border: 1px solid black;
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       display: flex;
     }
   }
@@ -27,6 +28,12 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      // max-width: 1150px;
+      padding: 0 50px;
+      flex-direction: row;
+    }
 
     @media (min-width: $desktop-width) {
       max-width: 1150px;

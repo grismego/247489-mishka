@@ -52,21 +52,20 @@
 
 
   .categories__link {
-    font-family: $opensansbold;
-    font-size: 19px;
-    line-height: 24px;
+    @include textbold(19px, 24px);
     color: $color-white;
     display: flex;
     width: 100%;
-    padding: 25px 150px 25px 25px;
+    padding: 25px 150px 29px 28px;
     text-decoration: none;
 
     @media (min-width: $tablet-width) {
-      padding: 25px 200px 25px 25px;
+      @include textbold(20px, 30px);
+      padding: 28px 200px 28px 37px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 25px 340px 25px 25px;
+      padding: 28px 340px 22px 35px;
     }
   }
 }

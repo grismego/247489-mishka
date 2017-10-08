@@ -11,7 +11,15 @@
   .video__title {
     @include textbold(17px, 24px);
     color: $color-black;
-    padding-left: 70px;
+    margin: 28px;
+    padding-left: 62px;
+
+    @media (min-width: $tablet-width) {
+      // width: 200px;
+      padding-left: 77px;
+      margin-top: 34px;
+      font-size: 20px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 200px;
@@ -22,9 +30,13 @@
   .video__description-text {
     @include textnormal(13px, 24px);
     color: $color-grey;
+    margin-top: 20px;
+    padding: 0 34px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
+      padding-left: 6px;
+      margin-top: 4px;
 
       @include textnormal(15px, 30px);
     }
@@ -44,6 +56,12 @@
   .video__container {
     align-self: center;
 
+    @media (min-width: $tablet-width) {
+      order: -1;
+      width: 668px;
+      height: 455px;
+    }
+
     @media (min-width: $desktop-width) {
       order: 1;
       width: 682px;
@@ -52,11 +70,14 @@
   }
 
   .video__button {
-    width: 200px;
-    margin: 0 auto;
+    width: 193px;
+    margin-top: 23px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media (min-width: $tablet-width) {
-      width: 100%;
+      width: 98%;
+      margin-top: 35px;
     }
 
     @media (min-width: $desktop-width) {

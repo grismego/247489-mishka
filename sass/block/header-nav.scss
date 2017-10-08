@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  padding: 20px;
+  padding: 21px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -12,11 +12,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 0;
+    /* padding: 0 50px; */
+    max-width: 1050px;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .header-nav__logo {
-    margin-left: auto;
+    margin-left: 96px;
     width: 88px;
     height: 40px;
     display: block;
@@ -41,6 +44,7 @@
     width: 20px;
     height: 20px;
     margin-left: auto;
+    margin-right: 10px;
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
