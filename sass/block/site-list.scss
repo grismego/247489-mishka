@@ -125,11 +125,11 @@
     &--search {
       @media (min-width: $tablet-width) {
         font-size: 0;
-        width: 84px;
+        width: 81px;
         display: flex;
         background-image: url("../img/icon-search.svg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 34px 36px;
       }
     }
 
@@ -139,6 +139,10 @@
         margin-left: auto;
         padding-left: 84px;
         padding-right: 0;
+        padding-top: 31px;
+        background-image: url("../img/icon-cart.svg");
+        background-repeat: no-repeat;
+        background-position: 33px 35px;
       }
     }
   }

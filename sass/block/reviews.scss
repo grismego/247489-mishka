@@ -6,12 +6,13 @@
     // background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     // background-size: auto;
-    padding-bottom: 95px;
+    padding-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 77px;
-    padding-bottom: 138px;
+    padding-bottom: 7px;
+    // padding-top: 77px;
+    // padding-bottom: 138px;
     // background-size: contain;
   }
 
@@ -26,6 +27,7 @@
       flex-direction: row;
       padding: 0 50px;
       padding-top: 77px;
+      padding-bottom: 13px;
       flex-wrap: wrap;
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
@@ -35,13 +37,15 @@
       // padding-left: 176px;
       padding: 0;
       padding-left: 174px;
+      padding-top: 77px;
+      padding-bottom: 138px;
       width: 1050px;
     }
   }
 
   .reviews__item {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
   }
 
   .reviews__text {
@@ -52,11 +56,11 @@
 
     @media (min-width: $tablet-width) {
       @include textnormal(17px, 30px);
-      margin-top: 45px;
+      margin-top: 44px;
       margin-bottom: 55px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       padding-right: 106px;
       margin-bottom: 36px;
     }
@@ -81,7 +85,7 @@
 
     @media (min-width: $tablet-width) {
       width: 175px;
-      margin-top: -81px;
+      margin-top: -93px;
       margin-left: auto;
     }
   }
@@ -100,7 +104,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 6px;
+      margin-top: 1px;
     }
   }
 }

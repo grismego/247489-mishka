@@ -3,7 +3,7 @@
   // display: flex;
   // padding: 0 30px;
   width: 100%;
-  padding-top: 37px;
+  padding-top: 32px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -46,6 +46,11 @@
       margin-top: 45px;
       max-height: 535px;
     }
+
+    @media (min-width: $tablet-width) {
+      align-items: baseline;
+      align-content: flex-start;
+    }
   }
 
   .about-us__list-item {
@@ -62,7 +67,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      // width: 240px;
+      width: auto;
+      margin-right: 112px;
     }
   }
 }
