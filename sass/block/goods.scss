@@ -176,12 +176,22 @@
 
   .goods__image {
     align-self: center;
+    width: 260px;
+    height: 315px;
 
     @media (min-width: $tablet-width) {
       order: 1;
       margin-left: auto;
       width: 333px;
       height: 404px;
+      margin-top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 525px;
+      height: 636px;
+      margin-top: -117px;
+      z-index: -1;
     }
   }
 }

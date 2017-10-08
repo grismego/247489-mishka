@@ -68,6 +68,18 @@
 
   .catalog__image {
     border-bottom: 1px solid #ededed;
+    width: 260px;
+    height: 195px;
+
+    @media (min-width: $tablet-width) {
+      width: 334px;
+      height: 334px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 316px;
+      height: 462px;
+    }
   }
 
   .catalog__title {

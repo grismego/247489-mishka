@@ -82,7 +82,11 @@
           <td class="character__value">15 см</td>
         </tr>
       </table>
-      <img class="goods__image" src="img/triple-set-mobile@1x.jpg" alt="Вязанная корзинка" width="260" height="315">
+      <picture class="goods__image">
+        <source media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img src="img/triple-set-mobile@1x.jpg" scrset="img/triple-set-mobile@2x 2x" alt="Вязанная корзинка">
+      </picture>
       <p class="goods__price">Цена: 990 руб.</p>
       <a class="button goods__button">Заказать</a>
     </div>
@@ -171,7 +175,7 @@
       <div class="copy">
         <span class="copy__text">Разработано</span>
         <a class="copy__img" href="https://htmlacademy.ru/intensive/adaptive">
-        <img  src="img/logo-htmlacademy.svg" alt="htmlacademy.ru">
+        <img width="26" height="35" src="img/logo-htmlacademy.svg" alt="htmlacademy.ru">
         </a>
       </div>
     </div>

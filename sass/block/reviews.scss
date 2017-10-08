@@ -3,15 +3,16 @@
   // padding: 35px 0;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/review@1x.jpg");
+    // background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    // background-size: auto;
     padding-bottom: 95px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 77px;
     padding-bottom: 138px;
+    // background-size: contain;
   }
 
   .reviews__wrapper {
@@ -26,6 +27,8 @@
       padding: 0 50px;
       padding-top: 77px;
       flex-wrap: wrap;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
     }
 
     @media (min-width: $desktop-width) {
