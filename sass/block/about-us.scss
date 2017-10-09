@@ -3,11 +3,15 @@
   // display: flex;
   // padding: 0 30px;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 24px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
+    padding-top: 52px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
   }
 
 
@@ -17,7 +21,7 @@
     padding: 0 30px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 50px;
+      padding: 0 47px;
     }
 
     @media (min-width: $desktop-width) {
@@ -58,12 +62,73 @@
     padding-top: 58px;
     margin-bottom: 25px;
     text-align: left;
+    position: relative;
+
+    &--flower::before {
+      position: absolute;
+      top: 0;
+      left: 8px;
+      width: 50px;
+      height: 40px;
+      content: "";
+      background: url("../img/icon-feature-flower.svg") no-repeat;
+    }
+
+    &--money::before {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 50px;
+      height: 40px;
+      content: "";
+      background: url("../img/icon-feature-money.svg") no-repeat;
+    }
+
+    &--likes::before {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 50px;
+      height: 40px;
+      content: "";
+      background: url("../img/icon-feature-heart.svg") no-repeat;
+    }
+
+    &--ball::before {
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      width: 50px;
+      height: 40px;
+      content: "";
+      background: url("../img/icon-feature-ball.svg") no-repeat;
+    }
+
+    &--rocket::before {
+      position: absolute;
+      top: 6px;
+      left: -5px;
+      width: 55px;
+      height: 40px;
+      content: "";
+      background: url("../img/icon-feature-rocket.svg") no-repeat;
+    }
+
+    &--gift::before {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 55px;
+      height: 40px;
+      content: "";
+      background: url("../img/icon-feature-gift.svg") no-repeat;
+    }
 
     @media (min-width: $tablet-width) {
       @include textbold(20px, 22px);
       min-height: 115px;
       margin-bottom: 40px;
-      width: 45%;
+      width: 50%;
     }
 
     @media (min-width: $desktop-width) {

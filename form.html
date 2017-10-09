@@ -10,21 +10,21 @@
 
 <body>
   <header class="header">
-    <nav class="header-nav container">
+    <nav class="header-nav">
       <a href="index.html" class="header-nav__logo header-nav__logo--hidden">
-        <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA">
+        <!-- <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA"> -->
       </a>
-      <a class="header-nav__toggle header-nav__toggle--open">Октрыть меню</a>
-      <ul class="header-nav__list site-list">
+      <a class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Октрыть меню</a>
+      <ul class="header-nav__list site-list site-list--no-js">
         <li class="site-list__item site-list__item--logo">
           <a href="index.html" class="header-nav__logo">
           </a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+          <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Вязание на заказ</a>
+          <a href="form.html" class="site-list__link site-list__link--order">Вязание на заказ</a>
         </li>
         <li class="site-list__item site-list__item--search">
           <a href="#" class="site-list__link site-list__link--search">Поиск по сайту</a>
@@ -35,7 +35,7 @@
       </ul>
     </nav>
   </header>
-  <div class="page-title">
+  <div class="page-title page-title--zigzag">
     <div class="page-title__wrapper">
       <div class="page-title__list page-list">
         <a href="catalog.html" class="page-list__link">Каталог товаров</a>

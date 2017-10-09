@@ -3,10 +3,30 @@
   position: relative;
   background: $color-light-grey;
 
+  &--zigzag {
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 10px;
+        margin-top: -10px;
+        width: 100%;
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        background: url("../img/bg-zigzag-fill.svg") repeat-x;
+        background-position-x: -18px;
+        background-size: 806px;
+      }
+    }
+  }
+
   .page-title__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
+    // padding: 0 30px;
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
@@ -106,6 +126,7 @@
     @media (min-width: $desktop-width) {
       @include textbold(53px, 57px);
       width: 58%;
+      padding-bottom: 97px;
       text-align: center;
       align-self: center;
     }
@@ -113,6 +134,7 @@
     &--index {
       padding-top: 70px;
       padding-bottom: 120px;
+      // width: 249px;
 
       @media (min-width: $tablet-width) {
         padding-top: 105px;

@@ -94,16 +94,34 @@
     @media (min-width: $tablet-width) {
       // padding-left: 50px;
       padding: 48px 46px;
+      padding-bottom: 45px;
       margin-bottom: 2px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 48px;
+        height: 81px;
+        display: block;
+        position: absolute;
+        top: 31px;
+        right: 52px;
+        background: url("../img/icon-flag.svg") no-repeat;
+      }
 
       @include textbold(43px, 50px);
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
-      margin-top: 105px;
       width: 300px;
       margin-bottom: 0;
+      margin-top: 96px;
+
+      &::before {
+        top: 38px;
+        left: -107px;
+      }
 
 
       @include textbold(53px, 57px);
@@ -112,8 +130,12 @@
   }
 
   .adress-value {
-    margin: 0 0 0 26px;
+    margin: 0 0 0 31px;
     text-align: left;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
   }
 
   .email-value {

@@ -19,6 +19,7 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
+      height: 36px;
       background: url("../img/logo-footer.svg") no-repeat;
     }
   }
@@ -32,13 +33,15 @@
 
     @media (min-width: $tablet-width) {
       // max-width: 1150px;
-      padding: 0 50px;
+      align-items: center;
+      padding: 27px 50px;
+      // padding-top: 27px;
       flex-direction: row;
     }
 
     @media (min-width: $desktop-width) {
       max-width: 1150px;
-      padding: 0 50px;
+      padding: 35px 50px;
       flex-direction: row;
     }
   }

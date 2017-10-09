@@ -10,21 +10,21 @@
 
 <body>
   <header class="header">
-    <nav class="header-nav container">
+    <nav class="header-nav">
       <a href="index.html" class="header-nav__logo header-nav__logo--hidden">
-        <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA">
+        <!-- <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA"> -->
       </a>
-      <a class="header-nav__toggle header-nav__toggle--open">Октрыть меню</a>
-      <ul class="header-nav__list site-list">
+      <a class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Октрыть меню</a>
+      <ul class="header-nav__list site-list site-list--no-js">
         <li class="site-list__item site-list__item--logo">
           <a href="index.html" class="header-nav__logo">
           </a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+          <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Вязание на заказ</a>
+          <a href="form.html" class="site-list__link site-list__link--order">Вязание на заказ</a>
         </li>
         <li class="site-list__item site-list__item--search">
           <a href="#" class="site-list__link site-list__link--search">Поиск по сайту</a>
@@ -35,7 +35,7 @@
       </ul>
     </nav>
   </header>
-  <div class="page-title">
+  <div class="page-title page-title--zigzag">
     <div class="page-title__wrapper">
     <div class="page-title__list page-list">
       <a href="catalog.html" class="page-list__link">Каталог товаров</a>
@@ -59,11 +59,11 @@
       </a>
         <div class="catalog__box">
           <h2 class="catalog__title">
-          <a class="catalog__link" href="#">Зайчик попрыгайчик</a>
+          <a class="catalog__link catalog__link--title" href="#">Зайчик-попрыгайчик</a>
         </h2>
-          <p class="catalog__features">Рост: 30 см, вес 200г.</p>
+          <p class="catalog__features">Рост 30 см, вес 200 г.</p>
           <div class="catalog__price">
-            <span class="catalog__price-value">1200 руб.</span>
+            <span class="catalog__price-value">1 200 руб.</span>
             <a class="catalog__price-cart">в корзину</a>
           </div>
         </div>
@@ -77,7 +77,7 @@
           </picture>
         <div class="catalog__box">
           <h2 class="catalog__title">
-            <a class="catalog__link" href="#">Корзинка для белья</a>
+            <a class="catalog__link catalog__link--title" href="#">Корзинка для белья</a>
         </h2>
         <p class="catalog__features">Диаметр: 15 см, Высота 10 см</p>
         <div class="catalog__price">
@@ -96,11 +96,11 @@
         </a>
       <div class="catalog__box">
         <h2 class="catalog__title">
-            <a class="catalog__link" href="#">Большая корзинка для игрушек</a>
+            <a class="catalog__link catalog__link--title" href="#">Большая корзинка для игрушек</a>
           </h2>
         <p class="catalog__features">Диаметр: 30 см, высота 30 см</p>
         <div class="catalog__price">
-          <span class="catalog__price-value">1500 руб.</span>
+          <span class="catalog__price-value">1 500 руб.</span>
           <a class="catalog__price-cart">в корзину</a>
         </div>
       </div>
@@ -122,7 +122,7 @@
     </div>
   </div>
   </div>
-  <footer class="footer">
+  <footer class="footer footer--hiden">
     <div class="footer__wrapper">
       <a href="#" class="footer__logo"></a>
       <ul class="social">
@@ -139,7 +139,7 @@
       <div class="copy">
         <span class="copy__text">Разработано</span>
         <a class="copy__img" href="https://htmlacademy.ru/intensive/adaptive">
-        <img  src="img/logo-htmlacademy.svg" alt="htmlacademy.ru">
+        <img width="27" height="34" src="img/htmlacademy.svg" alt="htmlacademy.ru">
         </a>
       </div>
     </div>

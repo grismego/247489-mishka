@@ -19,10 +19,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   .site-list__item {
@@ -44,6 +45,7 @@
       &--cart {
         @media (min-width: $desktop-width) {
           order: 3;
+          margin-left: auto;
         }
       }
 
@@ -64,7 +66,9 @@
 
       @media (min-width: $desktop-width) {
         &--logo {
-          margin-right: 0;
+          // margin-right: 0;
+          margin-left: 40px;
+          margin-right: 98px;
         }
 
         &--search {
@@ -113,16 +117,11 @@
     padding-left: 70px;
     display: block;
 
-    @media (min-width: $tablet-width) {
-      display: inline-flex;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 0;
-      padding-right: 35px;
-    }
-
     &--search {
+      background-image: url("../img/icon-search.svg");
+      background-repeat: no-repeat;
+      background-position: 30px 32px;
+
       @media (min-width: $tablet-width) {
         font-size: 0;
         width: 81px;
@@ -134,6 +133,10 @@
     }
 
     &--cart {
+      background-image: url("../img/icon-cart.svg");
+      background-repeat: no-repeat;
+      background-position: 30px 29px;
+
       @media (min-width: $tablet-width) {
         display: flex;
         margin-left: auto;
@@ -145,5 +148,47 @@
         background-position: 33px 35px;
       }
     }
+
+    @media (min-width: $tablet-width) {
+      display: inline-flex;
+    }
+
+    @media (min-width: $desktop-width) {
+      // padding-left: 0;
+
+      &--catalog {
+        padding-left: 0;
+        padding-right: 35px;
+      }
+
+      &--order {
+        padding-left: 34px;
+        padding-right: 36px;
+      }
+    }
+
+    // &--search {
+    //   @media (min-width: $tablet-width) {
+    //     font-size: 0;
+    //     width: 81px;
+    //     display: flex;
+    //     background-image: url("../img/icon-search.svg");
+    //     background-repeat: no-repeat;
+    //     background-position: 34px 36px;
+    //   }
+    // }
+    //
+    // &--cart {
+    //   @media (min-width: $tablet-width) {
+    //     display: flex;
+    //     margin-left: auto;
+    //     padding-left: 84px;
+    //     padding-right: 0;
+    //     padding-top: 31px;
+    //     background-image: url("../img/icon-cart.svg");
+    //     background-repeat: no-repeat;
+    //     background-position: 33px 35px;
+    //   }
+    // }
   }
 }

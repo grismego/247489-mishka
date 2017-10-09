@@ -16,7 +16,7 @@
     @media (min-width: $desktop-width) {
       padding-left: 225px;
       padding-right: 209px;
-      margin-top: 151px;
+      margin-top: 126px;
     }
   }
 
@@ -26,6 +26,14 @@
     margin: 0;
     margin-bottom: 20px;
     border: none;
+
+    &--type-box {
+      margin-bottom: 12px;
+    }
+
+    &--fio {
+      margin-bottom: 24px;
+    }
 
     @media (min-width: $tablet-width) {
       // padding: 0 50px;
@@ -38,27 +46,40 @@
       &--type-box {
         padding-top: 39px;
         padding-bottom: 16px;
+        margin-bottom: 0;
+
+        @media (min-width: $desktop-width) {
+          padding-bottom: 13px;
+        }
       }
 
       &--color-box {
         padding-top: 64px;
         padding-bottom: 11px;
+
+        @media (min-width: $desktop-width) {
+          padding-top: 67px;
+          padding-bottom: 7px;
+        }
       }
 
       &--fio {
         padding-top: 69px;
-        padding-bottom: 31px;
+        padding-bottom: 49px;
       }
 
       &--callback {
         padding-top: 51px;
-        padding-bottom: 50px;
+        padding-bottom: 45px;
       }
 
       &--textarea {
-        padding-top: 60px;
-        // padding-bottom: 27px;
-        margin-bottom: 58px;
+        padding-top: 68px;
+        margin-bottom: 69px;
+
+        @media (min-width: $desktop-width) {
+          margin-bottom: 64px;
+        }
       }
     }
   }
@@ -84,7 +105,7 @@
 
     @media (min-width: $desktop-width) {
       margin: 0 auto;
-      padding: 0 64px;
+      padding: 0 61px;
       max-width: 1050px;
       flex-wrap: nowrap;
     }
@@ -93,10 +114,11 @@
       @media (min-width: $tablet-width) {
         flex-direction: row;
         flex-wrap: nowrap;
+        // padding-top: 18px;
         // padding-top: 62px;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desktop-width) {
         padding-right: 175px;
       }
     }
@@ -127,7 +149,7 @@
     flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
-      margin-left: 134px;
+      margin-left: 125px;
       width: 70%;
     }
 
@@ -156,7 +178,12 @@
       @media (min-width: $tablet-width) {
         margin-top: -25px;
         align-items: baseline;
-        width: 73%;
+        width: 74.5%;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-left: 71px;
+        width: 75.5%;
       }
     }
   }
@@ -172,7 +199,7 @@
 
     &--phone {
       margin-bottom: 12px;
-      width: 100px;
+      // width: 100px;
     }
 
     &--email {
@@ -212,15 +239,19 @@
     padding-left: 62px;
     box-sizing: content-box;
     max-width: 157px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     position: relative;
 
     @media (min-width: $tablet-width) {
       @include textbold(19px, 18px);
       width: 100%;
       max-width: none;
-      padding-left: 77px;
+      padding-left: 86px;
       margin-bottom: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 79px;
     }
 
     &::before {
@@ -236,8 +267,13 @@
       @media (min-width: $tablet-width) {
         width: 52px;
         height: 52px;
-        left: -5px;
+        left: 3px;
         top: -16px;
+      }
+
+      @media (min-width: $tablet-width) {
+        left: -5px;
+        top: -17px;
       }
     }
   }
@@ -264,6 +300,7 @@
 
     @media (min-width: $desktop-width) {
       // align-items: baseline;
+      padding-left: 78px;
       margin-bottom: 0;
       align-self: flex-start;
       margin-right: 59px;
@@ -296,6 +333,11 @@
         left: -5px;
         top: -16px;
       }
+
+      @media (min-width: $tablet-width) {
+        left: -2px;
+        top: -17px;
+      }
     }
   }
 
@@ -308,17 +350,23 @@
       margin-right: 30px;
       margin-top: 0;
       align-self: center;
-      margin-left: -8px;
+      // margin-left: -8px;
     }
   }
 
   .form__block-name {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       width: 100%;
-      margin-bottom: 14px;
+      margin-bottom: 20px;
       // align-items: baseline;
     }
   }
@@ -331,18 +379,20 @@
     border-bottom: 1px solid $color-black;
     padding-bottom: 20px;
     padding-top: 10px;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       @include textnormal(19px, 18px);
-      padding-bottom: 15px;
+      padding-bottom: 14px;
       padding-top: 15px;
+      padding-left: 10px;
       background: inherit;
+      border-width: 2px;
     }
 
-    &:last-child {
-      margin-bottom: 5px;
-    }
+    // &:last-child {
+    //   margin-bottom: 5px;
+    // }
   }
 
   .form__input-phone,
@@ -355,6 +405,10 @@
     padding-bottom: 17px;
     padding-top: 10px;
     background: inherit;
+
+    @media (min-width: $tablet-width) {
+      border-width: 2px;
+    }
   }
 
   // .form__block-phone {
@@ -362,20 +416,22 @@
   // }
 
   .form__input-phone {
-    margin-bottom: 32px;
+    margin-bottom: 55px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 90px;
-      padding-bottom: 15px;
-      padding-top: 18px;
+      margin-left: 135px;
+      padding-bottom: 16px;
+      padding-top: 15px;
       padding-left: 20px;
+      margin-bottom: 31px;
       background: inherit;
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 25px;
+      margin-left: 82px;
       padding-top: 14px;
       padding-bottom: 18px;
+      margin-bottom: 34px;
     }
   }
 
@@ -383,8 +439,9 @@
     margin-bottom: 5px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 102px;
+      margin-left: 105px;
       padding-left: 20px;
+      padding-bottom: 15px;
       background: inherit;
     }
 
@@ -406,12 +463,14 @@
       @include textnormal(19px, 20px);
       margin-left: 128px;
       padding-bottom: 5px;
-      padding-top: 0;
+      padding-top: 11px;
       background: inherit;
+      margin-top: -16px;
+      border-width: 2px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 72px;
+      margin-left: 75px;
     }
   }
 
@@ -427,7 +486,7 @@
       padding: 0 50px;
       flex-direction: row-reverse;
       justify-content: space-between;
-      margin-top: 13px;
+      // margin-top: 13px;
       align-items: baseline;
       margin-bottom: 34px;
     }
@@ -441,7 +500,7 @@
   .form__annotation {
     @include textnormal(14px, 16px);
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     @media (min-width: $tablet-width) {
       @include textnormal(17px, 30px);

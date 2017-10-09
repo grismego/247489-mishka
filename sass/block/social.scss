@@ -3,12 +3,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 0;
+  padding: 22px 0 18px 0;
   margin: 0;
   width: 159px;
   list-style: none;
   align-self: center;
   border-bottom: 1px solid $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-left: 69px;
+  }
 
   .social__item {
     // margin-right: 10px;
