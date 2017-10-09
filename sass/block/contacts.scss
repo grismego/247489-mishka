@@ -1,24 +1,39 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
+
   color: $color-grey;
-  // padding: 0 30px;
+  width: 100%;
+  padding: 35px 0;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
+    padding-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 102px;
+  }
+
+
+  .contacts__wrapper {
+    display: flex;
     flex-direction: column;
-    /* padding-left: 176px; */
-    height: 460px;
-    /* width: 100%; */
-    width: 1050px;
-    margin: 0 auto;
-    padding-left: 170px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: column;
+      // min-height: 460px;
+      // max-height: 500px;
+      width: 1050px;
+      margin: 0 auto;
+      padding-left: 170px;
+      align-content: space-between;
+    }
   }
 
   @include textnormal(15px, 30px);
@@ -28,7 +43,7 @@
     display: flex;
     flex-direction: row;
     padding: 0 30px;
-    // padding: 0 30px;
+    margin-bottom: 20px;
 
     @include textnormal(15px, 30px);
 
@@ -36,6 +51,8 @@
       width: 50%;
       align-items: flex-start;
       padding: 0;
+
+      @include textnormal(17px, 30px);
     }
   }
 
@@ -52,6 +69,8 @@
   }
 
   .contacts__email {
+    margin-bottom: 29px;
+
     @media (min-width: $tablet-width) {
       padding-left: 50px;
     }
@@ -59,6 +78,7 @@
     @media (min-width: $desktop-width) {
       padding-left: 0;
       padding-right: 0;
+      margin-bottom: 30px;
       width: 300px;
     }
   }
@@ -66,21 +86,56 @@
   .contacts__title {
     width: 100%;
     padding: 0 30px;
+    margin-bottom: 26px;
+
+    @include textbold(18px, 30px);
+    color: $color-black;
 
     @media (min-width: $tablet-width) {
-      padding-left: 50px;
+      // padding-left: 50px;
+      padding: 48px 46px;
+      padding-bottom: 45px;
+      margin-bottom: 2px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 48px;
+        height: 81px;
+        display: block;
+        position: absolute;
+        top: 31px;
+        right: 52px;
+        background: url("../img/icon-flag.svg") no-repeat;
+      }
+
+      @include textbold(43px, 50px);
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
       width: 300px;
+      margin-bottom: 0;
+      margin-top: 96px;
+
+      &::before {
+        top: 38px;
+        left: -107px;
+      }
+
+
+      @include textbold(53px, 57px);
     }
     // padding: 0 30px;
   }
 
   .adress-value {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 31px;
     text-align: left;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
   }
 
   .email-value {
@@ -89,20 +144,34 @@
     border-bottom: 1px solid $color-aqua;
     color: $color-grey;
     width: auto;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 23px;
+    }
   }
 
   .contacts__maps {
     width: 100%;
+    margin-top: 17px;
+
+
+    @media (min-width: $tablet-width) {
+      margin-top: 38px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 525px;
       height: 457px;
       order: 1;
+      margin-left: auto;
+      display: block;
+      margin-top: -457px;
     }
   }
 
   .contacts__maps-iframe {
     width: 100%;
+    height: 457px;
 
     @media (min-width: $tablet-width) {
       width: 100%;
@@ -115,11 +184,28 @@
   }
 
   .contact__button-wrap {
-    margin: 0 auto;
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      margin-top: 44px;
+      // margin-left: 97px;
+    }
 
     @media (min-width: $desktop-width) {
-      margin: 0;
-      // margin-left: 97px;
+      margin-top: 57px;
+      margin-left: 0;
+    }
+  }
+
+  .contact__button {
+    font-size: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+      width: 229px;
     }
   }
 }
