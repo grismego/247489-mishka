@@ -1,15 +1,15 @@
 .reviews {
   width: 100%;
-  border-bottom: 7px solid #f1f1f1;
-  border-image: url("../img/bg-zigzag-line.svg") 30 round;
+  // border-bottom: 7px solid #f1f1f1;
+  // border-image: url("../img/bg-zigzag-line.svg") 30 round;
   // padding: 35px 0;
 
   @media (min-width: $tablet-width) {
     // background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    border-width: 17px;
+    // border-width: 17px;
     // background-size: auto;
-    padding-bottom: 67px;
+    // padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,12 +25,15 @@
     padding: 0 30px;
     padding-bottom: 43px;
     margin: 0 auto;
+    border-bottom: 7px solid #f1f1f1;
+    border-image: url("../img/bg-zigzag-line.svg") 30 round;
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
+      border-width: 17px;
       padding: 0 50px;
       padding-top: 77px;
-      padding-bottom: 13px;
+      padding-bottom: 82px;
       flex-wrap: wrap;
       background-image: url("../img/review@1x.jpg");
       background-size: 350px;
