@@ -10,21 +10,21 @@
 
 <body>
   <header class="header">
-    <nav class="header-nav container">
+    <nav class="header-nav">
       <a href="index.html" class="header-nav__logo header-nav__logo--hidden">
-        <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA">
+        <!-- <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA"> -->
       </a>
-      <a class="header-nav__toggle header-nav__toggle--open">Октрыть меню</a>
-      <ul class="header-nav__list site-list">
+      <a class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Октрыть меню</a>
+      <ul class="header-nav__list site-list site-list--no-js">
         <li class="site-list__item site-list__item--logo">
           <a href="index.html" class="header-nav__logo">
           </a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+          <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Вязание на заказ</a>
+          <a href="form.html" class="site-list__link site-list__link--order">Вязание на заказ</a>
         </li>
         <li class="site-list__item site-list__item--search">
           <a href="#" class="site-list__link site-list__link--search">Поиск по сайту</a>
@@ -35,16 +35,19 @@
       </ul>
     </nav>
   </header>
+
   <div class="page-title page-title--index">
-    <div class="container">
-      <div class="page-title__item page-list">
+    <div class="page-title__wrapper">
+      <div class="page-title__list page-list">
         <a href="catalog.html" class="page-list__link">Каталог товаров</a>
         <a href="form.html" class="page-list__link">Вязание на заказ</a>
         <a href="catalog.html" class="page-list__link">Новые поступления</a>
         <a href="form.html" class="page-list__link">Распродажа</a>
         <span class="page-list__delivery">Бесплатная доставка по России</span>
       </div>
-      <h1 class="page-title__text page-title__text--index">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-title__text page-title__text--index">
+        Милые штуки ручной <br>   работы для дома
+      </h1>
     </div>
   </div>
   <div class="categories">
@@ -57,7 +60,8 @@
       </div>
     </div>
   </div>
-  <div class="goods container">
+  <div class="goods">
+    <div class="goods__wrapper">
     <h2 class="goods__title">Вязаные корзинки</h2>
     <span class="goods__category">товар недели</span>
     <div class="goods__item">
@@ -65,46 +69,53 @@
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
       <table class="goods__character character">
-        <tr>
+        <tr class="character__row">
           <td class="character__title">Цвет:</td>
           <td class="character__value">&laquo;Тиффани&raquo;/серый</td>
         </tr>
-        <tr>
+        <tr class="character__row">
           <td class="character__title">Диаметр:</td>
           <td class="character__value">25 см</td>
         </tr>
-        <tr>
+        <tr class="character__row">
           <td class="character__title">Высота:</td>
           <td class="character__value">15 см</td>
         </tr>
       </table>
-      <img class="goods__image" src="img/triple-set-mobile@1x.jpg" alt="Вязанная корзинка" width="260" height="315">
+      <picture class="goods__image">
+        <source media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="goods__image" src="img/triple-set-mobile@1x.jpg" scrset="img/triple-set-mobile@2x 2x" alt="Вязанная корзинка">
+      </picture>
       <p class="goods__price">Цена: 990 руб.</p>
       <a class="button goods__button">Заказать</a>
     </div>
+    </div>
   </div>
-  <div class="about-us container">
+  <div class="about-us">
+    <div class="about-us__wrapper">
     <h2 class="title-text">Коротко о нас:</h2>
     <ul class="about-us__list">
-      <li class="about-us__list-item">
-        Экологически чистые материалы
+      <li class="about-us__list-item about-us__list-item--flower">
+        Экологически <br> чистые материалы
       </li>
-      <li class="about-us__list-item">
-        Скандинавский стиль по российской цене
+      <li class="about-us__list-item about-us__list-item--money">
+        Скандинавский стиль <br>  по российской цене
       </li>
-      <li class="about-us__list-item">
-        Увеличивает лайки на фотогрфиях
+      <li class="about-us__list-item about-us__list-item--likes">
+        Увеличивает лайки <br>  на фотографиях
       </li>
-      <li class="about-us__list-item">
-        Связано вручную с любовью и умилением
+      <li class="about-us__list-item about-us__list-item--ball">
+        Связано вручную с <br>  любовью и умилением
       </li>
-      <li class="about-us__list-item">
-        Поддержка отечественного производителя
+      <li class="about-us__list-item about-us__list-item--rocket">
+        Поддержка отечественного <br>  производителя
       </li>
-      <li class="about-us__list-item">
-        Поставляются в подарочной упаковке
+      <li class="about-us__list-item about-us__list-item--gift">
+        Поставляется в <br>  подарочной упаковке
       </li>
     </ul>
+    </div>
   </div>
   <div class="reviews">
     <div class="reviews__wrapper slider">
@@ -128,6 +139,7 @@
     </div>
   </div>
   <div class="contacts">
+    <div class="contacts__wrapper">
     <h2 class="contacts__title title-text">Контакты</h2>
     <div class="contacts__email">
       <span class="email">e-mail:</span>
@@ -144,8 +156,9 @@
     <div class="contact__button-wrap">
       <a class="button contact__button" href="#">Напишите нам</a>
     </div>
+    </div>
   </div>
-  <footer class="footer">
+  <footer class="footer footer--hiden">
     <div class="footer__wrapper">
       <a href="#" class="footer__logo"></a>
       <ul class="social">
@@ -162,7 +175,7 @@
       <div class="copy">
         <span class="copy__text">Разработано</span>
         <a class="copy__img" href="https://htmlacademy.ru/intensive/adaptive">
-        <img  src="img/logo-htmlacademy.svg" alt="htmlacademy.ru">
+        <img width="27" height="34" src="img/htmlacademy.svg" alt="htmlacademy.ru">
         </a>
       </div>
     </div>

@@ -1,8 +1,22 @@
 .categories {
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 0 50px;
-    // margin: 0 50px;
+    position: relative;
+    background: #f8f8f8;
+
+    &::after {
+      content: "";
+      height: 10px;
+      margin-top: -10px;
+      width: 100%;
+      z-index: 10;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
+      background-position-x: -18px;
+      background-size: 806px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +33,7 @@
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
+      padding: 0 50px;
       // padding: 0 50px;
       // margin: 0 50px;
     }
@@ -26,6 +41,7 @@
     @media (min-width: $desktop-width) {
       width: 1050px;
       margin: 0 auto;
+      padding: 0;
     }
   }
 
@@ -37,6 +53,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
+
     &--light {
       background-color: #63d1bb;
     }
@@ -46,12 +66,22 @@
     }
   }
 
+
   .categories__link {
-    font-family: $opensansbold;
-    font-size: 19px;
-    line-height: 24px;
+    @include textbold(19px, 24px);
     color: $color-white;
-    width: 50%;
+    display: flex;
+    width: 100%;
+    padding: 25px 150px 29px 28px;
     text-decoration: none;
+
+    @media (min-width: $tablet-width) {
+      @include textbold(20px, 30px);
+      padding: 28px 200px 28px 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 28px 340px 22px 35px;
+    }
   }
 }

@@ -12,7 +12,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 0;
+    /* padding: 0 50px; */
+    max-width: 1050px;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .header-nav__logo {
@@ -25,6 +28,19 @@
     @media (min-width: $tablet-width) {
       margin-left: 0;
       align-self: center;
+      width: 114px;
+      height: 48px;
+      margin-top: 4px;
+      background: url("../img/logo-tablet.svg") no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+      align-self: center;
+      width: 151px;
+      height: 75px;
+      margin-top: 10px;
+      background: url("../img/logo-desktop.svg") no-repeat;
     }
 
     &--hidden {
@@ -63,6 +79,10 @@
         display: none;
       }
     }
+
+    &--no-js {
+      background: url("../img/icon-menu-close.svg") no-repeat;
+    }
   }
 
   .header-nav__list {
@@ -73,6 +93,7 @@
 
     @media (min-width: $tablet-width) {
       position: static;
+      min-height: 88px;
     }
   }
 }
