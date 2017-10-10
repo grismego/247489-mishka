@@ -44,6 +44,8 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/hero-mobile@2x.jpg") no-repeat;
+      background-position: center -18px;
+      background-size: 566px;
     }
 
     @media (min-width: $tablet-width) {
@@ -146,7 +148,7 @@
       @media (min-width: $desktop-width) {
         padding-top: 100px;
         padding-bottom: 360px;
-        width: 75%;
+        width: 59%;
       }
     }
   }

@@ -31,7 +31,7 @@
       // max-height: 500px;
       width: 1050px;
       margin: 0 auto;
-      padding-left: 170px;
+      padding-left: 174px;
       align-content: space-between;
     }
   }
@@ -115,12 +115,13 @@
     @media (min-width: $desktop-width) {
       padding-left: 0;
       width: 300px;
-      margin-bottom: 0;
+      margin-bottom: 4px;
       margin-top: 96px;
+
 
       &::before {
         top: 38px;
-        left: -107px;
+        left: -111px;
       }
 
 
