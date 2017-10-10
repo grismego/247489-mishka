@@ -44,6 +44,8 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/hero-mobile@2x.jpg") no-repeat;
+      background-position: center -18px;
+      background-size: 566px;
     }
 
     @media (min-width: $tablet-width) {
@@ -54,10 +56,10 @@
       background-color: #f9f9f9;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/hero-tablet@2x.jpg") no-repeat;
+        background-image: url("../img/hero-tablet@2x.jpg");
         // background-size: 2300px auto;
-        background-size: cover;
-        background-position: center;
+        background-size: 1150px;
+        background-position: center -2px;
       }
     }
 
@@ -68,11 +70,13 @@
       background-repeat: no-repeat;
       background-color: #f9f9f9;
 
-      // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //   background: url("../img/hero-desktop@2x.jpg") no-repeat;
-      //   background-position: center 2px;
-      //   background-size: cover;
-      // }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/hero-desktop@2x.jpg") no-repeat;
+        // background-position: center 2px;
+        background-position: 0 -52px;
+        background-size: cover;
+        background-color: #f1f1f1;
+      }
     }
 
     // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -144,7 +148,7 @@
       @media (min-width: $desktop-width) {
         padding-top: 100px;
         padding-bottom: 360px;
-        width: 75%;
+        width: 59%;
       }
     }
   }
