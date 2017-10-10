@@ -267,14 +267,14 @@
       @media (min-width: $tablet-width) {
         width: 52px;
         height: 52px;
-        left: 3px;
-        top: -16px;
-      }
-
-      @media (min-width: $tablet-width) {
-        left: -5px;
+        left: 4px;
         top: -17px;
       }
+
+      // @media (min-width: $tablet-width) {
+      //   left: -5px;
+      //   top: -17px;
+      // }
     }
   }
 
