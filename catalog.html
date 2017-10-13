@@ -13,25 +13,41 @@
   <header class="header">
     <nav class="header-nav">
       <a href="index.html" class="header-nav__logo header-nav__logo--hidden">
-        <!-- <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA"> -->
+        <svg class="site-list__link-logo" width="86" height="35">
+          <use class="site-list__link-logo-mobile" xlink:href="img/sprite.svg#logo-mobile"></use>
+        </svg>
       </a>
-      <a class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Октрыть меню</a>
+      <a href="#" class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Открыть меню</a>
       <ul class="header-nav__list site-list site-list--no-js">
         <li class="site-list__item site-list__item--logo">
           <a href="index.html" class="header-nav__logo">
-          </a>
+            <svg class="site-list__link-logo site-list__link-logo--tablet" width="113" height="46">
+              <use xlink:href="img/sprite.svg#logo-tablet"></use>
+            </svg>
+            <svg class="site-list__link-logo site-list__link-logo--desktop" width="149" height="72">
+              <use xlink:href="img/sprite.svg#logo-desktop"></use>
+            </svg>
+        </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--catalog">
           <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--order">
           <a href="form.html" class="site-list__link site-list__link--order">Вязание на заказ</a>
         </li>
         <li class="site-list__item site-list__item--search">
-          <a href="#" class="site-list__link site-list__link--search">Поиск по сайту</a>
+          <a href="search.html" class="site-list__link site-list__link--search">
+            <svg class="site-list__link-search" width="18" height="19">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            Поиск по сайту</a>
         </li>
         <li class="site-list__item site-list__item--cart">
-          <a href="#" class="site-list__link site-list__link--cart">Корзина: пока пуста</a>
+          <a href="#" class="site-list__link site-list__link--cart">
+            <svg class="site-list__link-cart" width="21" height="18">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -63,9 +79,13 @@
           <a class="catalog__link catalog__link--title" href="#">Зайчик-попрыгайчик</a>
         </h2>
           <p class="catalog__features">Рост 30 см, вес 200 г.</p>
-          <div class="catalog__price">
+          <div class="catalog__price js-modal">
             <span class="catalog__price-value">1 200 руб.</span>
-            <a class="catalog__price-cart">в корзину</a>
+            <a class="catalog__price-cart">
+              <svg class="catalog__price-cart-svg" width="21" height="18">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              в корзину</a>
           </div>
         </div>
       </article>
@@ -81,9 +101,13 @@
             <a class="catalog__link catalog__link--title" href="#">Корзинка для белья</a>
         </h2>
         <p class="catalog__features">Диаметр: 15 см, Высота 10 см</p>
-        <div class="catalog__price">
+        <div class="catalog__price js-modal">
           <span class="catalog__price-value">690 руб.</span>
-          <a class="catalog__price-cart">в корзину</a>
+          <a class="catalog__price-cart ">
+            <svg class="catalog__price-cart-svg" width="21" height="18">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            в корзину</a>
         </div>
     </div>
     </article>
@@ -100,23 +124,38 @@
             <a class="catalog__link catalog__link--title" href="#">Большая корзинка для игрушек</a>
           </h2>
         <p class="catalog__features">Диаметр: 30 см, высота 30 см</p>
-        <div class="catalog__price">
+        <div class="catalog__price js-modal">
           <span class="catalog__price-value">1 500 руб.</span>
-          <a class="catalog__price-cart">в корзину</a>
+          <a class="catalog__price-cart">
+            <svg class="catalog__price-cart-svg" width="21" height="18">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            в корзину</a>
         </div>
       </div>
     </article>
     <div class="video">
-      <h2 class="video__title video__title--hidden">Процесс производства</h2>
+      <h2 class="video__title video__title--hidden">
+        <svg class="video__title-svg" width="32" height="22">
+        <use xlink:href="img/sprite.svg#video-camera"></use>
+      </svg>
+      Процесс производства</h2>
       <div class="video__container">
         <picture class="video__image">
           <source media="(min-width: 1050px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
           <img class="video__image image-button" src="img/video-mobile@1x.jpg"  srcset="img/video-mobile@2x.jpg 2x" alt="" width="260" height="150">
         </picture>
+        <svg width="101" height="77" class="video__image-button">
+          <use xlink:href="img/sprite.svg#video-button"></use>
+        </svg>
       </div>
       <div class="video__description">
-        <h2 class="video__title video__title--in-description">Процесс производства</h2>
+        <h2 class="video__title video__title--in-description">
+          <svg class="video__title-svg" width="32" height="22">
+            <use xlink:href="img/sprite.svg#video-camera"></use>
+          </svg>
+        Процесс производства</h2>
         <p class="video__description-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
         <a class="button video__button">Сделать заказ</a>
       </div>
@@ -125,40 +164,60 @@
   </div>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a href="#" class="footer__logo"></a>
+      <a href="#" class="footer__logo">
+        <svg class="footer__logo-svg" width="102" height="34">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
       <ul class="social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">ВК</a>
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <svg width="22" height="21" class="social__link-svg">
+              <use xlink:href="img/sprite.svg#icon-inst"></use>
+            </svg>
+            ВК</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy">ФБ</a>
+          <a class="social__link" href="https://facebook.com/htmlacademy">
+            <svg width="33" height="29" class="social__link-svg">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+            ФБ</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--inst" href="https://instagram.com/htmlacademy">Инстаграм</a>
+          <a class="social__link" href="https://instagram.com/htmlacademy">
+            <svg width="23" height="20" class="social__link-svg">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+            Инстаграм</a>
         </li>
       </ul>
       <div class="copy">
         <span class="copy__text">Разработано</span>
         <a class="copy__img" href="https://htmlacademy.ru/intensive/adaptive">
-        <img width="27" height="34" src="img/htmlacademy.svg" alt="htmlacademy.ru">
+          <svg width="29" height="34" class="copy__svg">
+            <use xlink:href="img/sprite.svg#footer-logo-academy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
   <div class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <span class="modal__option">Выберете размер</span>
-    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="radio" name="radio-value" value="small" id="modal__radio-1">
-      <input type="radio" name="radio-value" value="middle" id="modal__radio-2">
-      <input type="radio" name="radio-value" value="large" id="modal__radio-3">
-      <div class="modal__toggles">
-        <label for="modal__radio-1" class="modal__toggle">s</label>
-        <label for="modal__radio-2" class="modal__toggle">m</label>
-        <label for="modal__radio-3" class="modal__toggle">l</label>
-      </div>
-      <button class="button modal__button" type="submit" name="button">Добавить</button>
-    </form>
+    <div class="modal__window">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <span class="modal__option">Выберете размер:</span>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="radio" name="radio-value" value="small" id="modal__radio-1" checked>
+        <input type="radio" name="radio-value" value="middle" id="modal__radio-2">
+        <input type="radio" name="radio-value" value="large" id="modal__radio-3">
+        <div class="modal__toggles">
+          <label for="modal__radio-1" class="modal__toggle">s</label>
+          <label for="modal__radio-2" class="modal__toggle">m</label>
+          <label for="modal__radio-3" class="modal__toggle">l</label>
+        </div>
+        <button type="submit" name="button" class="button modal__button">Добавить</button>
+      </form>
+    </div>
   </div>
   <script src="js/javascript.js"></script>
 </body>

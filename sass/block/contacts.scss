@@ -130,7 +130,7 @@
     // padding: 0 30px;
   }
 
-  .adress-value {
+  .contacts__adress-value {
     margin: 0 0 0 31px;
     text-align: left;
 
@@ -139,12 +139,20 @@
     }
   }
 
-  .email-value {
+  .contacts__email-value {
     margin-left: 30px;
     text-decoration: none;
     border-bottom: 1px solid $color-aqua;
     color: $color-grey;
     width: auto;
+
+    &:hover {
+      color: $color-aqua;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     @media (min-width: $tablet-width) {
       margin-left: 23px;

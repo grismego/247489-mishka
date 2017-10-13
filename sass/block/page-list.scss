@@ -40,6 +40,14 @@
     text-decoration: none;
     color: $color-grey;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (min-width: $desktop-width) {
       margin-right: 45px;
     }

@@ -2,6 +2,22 @@ var menu_open = document.querySelector(".header-nav__toggle--open");
 var menu_close = document.querySelector(".header-nav__toggle--close");
 var menu = document.querySelector(".header-nav__toggle");
 var site_list = document.querySelector(".site-list");
+var modal_window = document.querySelector(".js-modal");
+var modal = document.querySelector(".modal")
+
+
+
+
+modal_window.addEventListener("click", function(event) {
+  event.preventDefault();
+  modal.classList.add("modal--show");
+});
+
+
+modal.addEventListener("click", function(event) {
+    event.preventDefault();
+    modal.classList.remove("modal--show");
+});
 
 function remove_css_btn() {
   var menu = document.querySelector(".header-nav__toggle");
