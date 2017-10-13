@@ -31,7 +31,7 @@
       // max-height: 500px;
       width: 1050px;
       margin: 0 auto;
-      padding-left: 174px;
+      padding-left: 170px;
       align-content: space-between;
     }
   }
@@ -65,6 +65,8 @@
       padding-left: 0;
       padding-right: 0;
       width: 300px;
+      margin-left: 4px;
+      margin-bottom: 22px;
     }
   }
 
@@ -80,6 +82,7 @@
       padding-right: 0;
       margin-bottom: 30px;
       width: 300px;
+      margin-left: 4px;
     }
   }
 
@@ -120,8 +123,8 @@
 
 
       &::before {
-        top: 38px;
-        left: -111px;
+        top: 42px;
+        left: -107px;
       }
 
 
@@ -130,7 +133,7 @@
     // padding: 0 30px;
   }
 
-  .adress-value {
+  .contacts__adress-value {
     margin: 0 0 0 31px;
     text-align: left;
 
@@ -139,12 +142,20 @@
     }
   }
 
-  .email-value {
+  .contacts__email-value {
     margin-left: 30px;
     text-decoration: none;
     border-bottom: 1px solid $color-aqua;
     color: $color-grey;
     width: auto;
+
+    &:hover {
+      color: $color-aqua;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     @media (min-width: $tablet-width) {
       margin-left: 23px;
@@ -164,7 +175,7 @@
       width: 525px;
       height: 457px;
       order: 1;
-      margin-left: auto;
+      margin-left: 352px;
       display: block;
       margin-top: -457px;
     }
@@ -197,7 +208,9 @@
 
     @media (min-width: $desktop-width) {
       margin-top: 57px;
-      margin-left: 0;
+      margin-left: 5px;
+      margin-right: 0;
+      align-self: baseline;
     }
   }
 

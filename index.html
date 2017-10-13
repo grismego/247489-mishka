@@ -11,32 +11,47 @@
 
 <body>
   <header class="header">
-    <nav class="header-nav">
-      <a href="index.html" class="header-nav__logo header-nav__logo--hidden">
-        <!-- <img class="header-nav__logo-image" src="img/logo-mobile.svg" alt="MISHKA"> -->
-      </a>
-      <a class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Октрыть меню</a>
-      <ul class="header-nav__list site-list site-list--no-js">
-        <li class="site-list__item site-list__item--logo">
-          <a href="index.html" class="header-nav__logo">
+      <nav class="header-nav">
+        <a href="#" class="header-nav__logo header-nav__logo--hidden">
+          <svg class="site-list__link-logo" width="86" height="35">
+            <use class="site-list__link-logo-mobile" xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+        </a>
+        <a href="#" class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Открыть меню</a>
+        <ul class="header-nav__list site-list site-list--no-js">
+          <li class="site-list__item site-list__item--logo">
+            <a href="index.html" class="header-nav__logo">
+              <svg class="site-list__link-logo site-list__link-logo--tablet" width="113" height="46">
+                <use xlink:href="img/sprite.svg#logo-tablet"></use>
+              </svg>
+              <svg class="site-list__link-logo site-list__link-logo--desktop" width="149" height="72">
+                <use xlink:href="img/sprite.svg#logo-desktop"></use>
+              </svg>
           </a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html" class="site-list__link site-list__link--order">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item site-list__item--search">
-          <a href="#" class="site-list__link site-list__link--search">Поиск по сайту</a>
-        </li>
-        <li class="site-list__item site-list__item--cart">
-          <a href="#" class="site-list__link site-list__link--cart">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
+          </li>
+          <li class="site-list__item site-list__item--catalog">
+            <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
+          </li>
+          <li class="site-list__item site-list__item--order">
+            <a href="form.html" class="site-list__link site-list__link--order">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--search">
+            <a href="search.html" class="site-list__link site-list__link--search">
+              <svg class="site-list__link-search" width="18" height="19">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              Поиск по сайту</a>
+          </li>
+          <li class="site-list__item site-list__item--cart">
+            <a href="#" class="site-list__link site-list__link--cart">
+              <svg class="site-list__link-cart" width="21" height="18">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   <div class="page-title page-title--index">
     <div class="page-title__wrapper">
       <div class="page-title__list page-list">
@@ -54,10 +69,18 @@
   <div class="categories">
     <div class="categories__wrapper">
       <div class="categories__item categories__item--light">
-        <a class="categories__link" href="#">Предметы интерьера</a>
+        <a class="categories__link" href="#">Предметы интерьера
+          <svg class="categories__image categories__image--interior" width="40" height="62">
+            <use xlink:href="img/sprite.svg#icon-interior"></use>
+          </svg>
+        </a>
       </div>
       <div class="categories__item categories__item--dark">
-        <a class="categories__link" href="#">Детские игрушки</a>
+        <a class="categories__link" href="#">Детские игрушки
+          <svg class="categories__image categories__image--toys" width="60" height="60">
+            <use xlink:href="img/sprite.svg#icon-toys"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -84,12 +107,16 @@
         </tr>
       </table>
       <picture class="goods__image">
+        <source type="image/webp"  media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+        <source type="image/webp"  media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+        <source type="image/webp"  srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+
         <source media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
           <img class="goods__image" src="img/triple-set-mobile@1x.jpg" scrset="img/triple-set-mobile@2x 2x" alt="Вязанная корзинка">
       </picture>
       <p class="goods__price">Цена: 990 руб.</p>
-      <a class="button goods__button">Заказать</a>
+      <a class="button goods__button js-modal">Заказать</a>
     </div>
     </div>
   </div>
@@ -136,67 +163,89 @@
           <a class="button button--next">Следующий отзыв</a>
         </div>
       </div>
-      <a class="button reviews__button">Написать</a>
+      <a href="write.html" class="button reviews__button">Написать</a>
     </div>
   </div>
   <div class="contacts">
     <div class="contacts__wrapper">
     <h2 class="contacts__title title-text">Контакты</h2>
     <div class="contacts__email">
-      <span class="email">e-mail:</span>
-      <a href="mailto:info@mimimishkashop.ru" class="email-value">info@mimimishkashop.ru</a>
+      <span class="contacts__email-item">e-mail:</span>
+      <a href="mailto:info@mimimishkashop.ru" class="contacts__email-value">info@mimimishkashop.ru</a>
     </div>
     <div class="contacts__adress">
-      <span class="adress">адрес:</span>
-      <p class="adress-value">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</p>
+      <span class="content__adress-item">адрес:</span>
+      <p class="contacts__adress-value">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</p>
     </div>
     <div class="contacts__maps">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603937925342!2d30.320690316366544!3d59.93871398187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjQiTiAzMMKwMTknMjIuNCJF!5e0!3m2!1sru!2sru!4v1506083591946"
         style="border:0" allowfullscreen class="contacts__maps-iframe"></iframe>
     </div>
     <div class="contact__button-wrap">
-      <a class="button contact__button" href="#">Напишите нам</a>
+      <a class="button contact__button" href="write.html" >Напишите нам</a>
     </div>
     </div>
   </div>
   <footer class="footer footer--hiden">
     <div class="footer__wrapper">
-      <a href="#" class="footer__logo"></a>
+      <a href="#" class="footer__logo">
+        <svg class="footer__logo-svg" width="102" height="34">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
       <ul class="social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">ВК</a>
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <svg width="22" height="21" class="social__link-svg">
+              <use xlink:href="img/sprite.svg#icon-inst"></use>
+            </svg>
+            ВК</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy">ФБ</a>
+          <a class="social__link" href="https://facebook.com/htmlacademy">
+            <svg width="33" height="29" class="social__link-svg">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+            ФБ</a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--inst" href="https://instagram.com/htmlacademy">Инстаграм</a>
+          <a class="social__link" href="https://instagram.com/htmlacademy">
+            <svg width="23" height="20" class="social__link-svg">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+            Инстаграм</a>
         </li>
       </ul>
       <div class="copy">
         <span class="copy__text">Разработано</span>
         <a class="copy__img" href="https://htmlacademy.ru/intensive/adaptive">
-        <img width="27" height="34" src="img/htmlacademy.svg" alt="htmlacademy.ru">
+          <svg width="29" height="34" class="copy__svg">
+            <use xlink:href="img/sprite.svg#footer-logo-academy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
   <div class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <span class="modal__option">Выберете размер:</span>
-    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="radio" name="radio-value" value="small" id="modal__radio-1" checked>
-      <input type="radio" name="radio-value" value="middle" id="modal__radio-2">
-      <input type="radio" name="radio-value" value="large" id="modal__radio-3">
-      <div class="modal__toggles">
-        <label for="modal__radio-1" class="modal__toggle">s</label>
-        <label for="modal__radio-2" class="modal__toggle">m</label>
-        <label for="modal__radio-3" class="modal__toggle">l</label>
-      </div>
-      <button type="submit" name="button" class="button modal__button">Добавить</button>
-    </form>
+    <div class="modal__window">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <span class="modal__option">Выберете размер:</span>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="radio" name="radio-value" value="small" id="modal__radio-1" checked>
+        <input type="radio" name="radio-value" value="middle" id="modal__radio-2">
+        <input type="radio" name="radio-value" value="large" id="modal__radio-3">
+        <div class="modal__toggles">
+          <label for="modal__radio-1" class="modal__toggle">s</label>
+          <label for="modal__radio-2" class="modal__toggle">m</label>
+          <label for="modal__radio-3" class="modal__toggle">l</label>
+        </div>
+        <button type="submit" name="button" class="button modal__button">Добавить</button>
+      </form>
+    </div>
   </div>
   <script src="js/javascript.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
 </body>
 
 </html>

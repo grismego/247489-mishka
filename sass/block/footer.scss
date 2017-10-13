@@ -14,13 +14,27 @@
 
   .footer__logo {
     width: 110px;
-    border: 1px solid black;
     display: none;
 
     @media (min-width: $tablet-width) {
       display: flex;
       height: 36px;
-      background: url("../img/logo-footer.svg") no-repeat;
+    }
+  }
+
+  .footer__logo-svg {
+    display: none;
+
+    &:hover {
+      fill: $color-aqua;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: block;
     }
   }
 

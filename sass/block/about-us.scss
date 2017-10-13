@@ -48,10 +48,11 @@
       flex-direction: column;
       flex-wrap: wrap;
       margin-top: 45px;
+      height: 500px;  /* ДЛЯ IE */
       max-height: 535px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       align-items: baseline;
       align-content: flex-start;
     }

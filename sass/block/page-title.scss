@@ -121,8 +121,8 @@
     @media (min-width: $tablet-width) {
       @include textbold(43px, 50px);
       width: 82%;
-      padding-top: 45px;
-      padding-bottom: 70px;
+      padding-top: 42px;
+      padding-bottom: 77px;
       text-align: center;
       align-self: center;
     }
@@ -137,7 +137,7 @@
 
     &--index {
       padding-top: 70px;
-      padding-bottom: 120px;
+      padding-bottom: 123px;
       // width: 249px;
 
       @media (min-width: $tablet-width) {

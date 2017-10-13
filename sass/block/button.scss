@@ -13,11 +13,30 @@
   color: $color-grey;
   cursor: pointer;
 
+  &:hover {
+    background-color: $color-grey;
+    color: $color-white;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
+
   &--next,
   &--prev {
     width: 50%;
     border: 1px solid $color-dark-grey;
     font-size: 0;
+
+    &:hover {
+      opacity: 0.6;
+      background-color: $color-white;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: $color-white;
+    }
 
     @media (min-width: $tablet-width) {
       border: none;

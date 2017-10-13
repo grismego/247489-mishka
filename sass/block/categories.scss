@@ -53,6 +53,10 @@
     justify-content: space-between;
     align-items: center;
 
+    // &:hover {
+    //   transform: scale(1.01);
+    // }
+
     @media (min-width: $tablet-width) {
       width: 50%;
     }
@@ -66,14 +70,40 @@
     }
   }
 
+  .categories__image {
+    position: absolute;
+    right: 22px;
+    top: 17px;
+    fill: #149080;
+    opacity: 0.5;
+
+    &--interior {
+      right: 36px;
+      top: 24px;
+    }
+
+    &--toys {
+      right: 28px;
+      top: 21px;
+    }
+  }
+
+  .categories__link:hover {
+    // padding-bottom: 34px;
+  }
 
   .categories__link {
     @include textbold(19px, 24px);
     color: $color-white;
     display: flex;
     width: 100%;
+    min-height: 100px;
     padding: 25px 150px 29px 28px;
     text-decoration: none;
+
+    // &:hover {
+    //   transform: scaleY(1.2);
+    // }
 
     @media (min-width: $tablet-width) {
       @include textbold(20px, 30px);
