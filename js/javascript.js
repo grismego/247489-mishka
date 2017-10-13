@@ -8,16 +8,15 @@ var modal = document.querySelector(".modal")
 
 
 
-modal_window.addEventListener("click", function(event) {
-  event.preventDefault();
-  modal.classList.add("modal--show");
-});
+// modal_window.addEventListener("click", function(event) {
+//   event.preventDefault();
+//   modal.classList.add("modal--show");
+// });
 
-
-modal.addEventListener("click", function(event) {
-    event.preventDefault();
-    modal.classList.remove("modal--show");
-});
+// modal.addEventListener("click", function(event) {
+//     event.preventDefault();
+//     modal.classList.remove("modal--show");
+// });
 
 function remove_css_btn() {
   var menu = document.querySelector(".header-nav__toggle");

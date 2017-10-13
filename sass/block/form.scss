@@ -4,13 +4,13 @@
   .form__text {
     @include textnormal(13px, 24px);
     color: $color-grey;
-    margin-top: 23px;
+    margin-top: 26px;
     margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
       font-size: 17px;
       line-height: 30px;
-      margin-top: 81px;
+      margin-top: 76px;
     }
 
     @media (min-width: $desktop-width) {
@@ -69,7 +69,7 @@
       }
 
       &--callback {
-        padding-top: 51px;
+        padding-top: 54px;
         padding-bottom: 45px;
       }
 
@@ -78,7 +78,7 @@
         margin-bottom: 69px;
 
         @media (min-width: $desktop-width) {
-          margin-bottom: 64px;
+          margin-bottom: 47px;
         }
       }
     }
@@ -191,12 +191,20 @@
 
   .form__legend-phone-svg {
     position: absolute;
-    right: 0;
+    right: 7px;
     top: 11px;
     fill: #cccccc;
 
     &:hover {
       fill: $color-aqua;
+    }
+
+    @media (min-width: $tablet-width) {
+      right: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 9px;
     }
   }
 
@@ -204,10 +212,22 @@
     position: absolute;
     right: 0;
     top: 11px;
+    width: 42px;
+    height: 32px;
     fill: #cccccc;
 
     &:hover {
       fill: $color-aqua;
+    }
+
+    @media (min-width: $tablet-width) {
+      right: 16px;
+      top: 7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -1px;
+      top: 0;
     }
   }
 
@@ -282,9 +302,9 @@
       content: "";
       position: absolute;
       left: 0;
-      top: -11px;
-      width: 40px;
-      height: 40px;
+      top: -9px;
+      width: 36px;
+      height: 36px;
       border: 2px solid $color-grey;
       border-radius: 50%;
 
@@ -295,10 +315,12 @@
         top: -17px;
       }
 
-      // @media (min-width: $tablet-width) {
-      //   left: -5px;
-      //   top: -17px;
-      // }
+      @media (min-width: $desktop-width) {
+        width: 49px;
+        height: 49px;
+        left: -2px;
+        top: -15px;
+      }
     }
   }
 
@@ -314,10 +336,10 @@
   .form__label {
     @include textbold(17px, 18px);
     color: $color-black;
-    padding: 8px 0;
+    padding: 5px 0;
     padding-left: 62px;
     position: relative;
-    margin-bottom: 26px;
+    margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
       @include textbold(19px, 18px);
@@ -395,6 +417,11 @@
       flex-direction: row;
       flex-wrap: nowrap;
       width: 100%;
+      margin-bottom: 18px;
+      // align-items: baseline;
+    }
+
+    @media (min-width: $desktop-width) {
       margin-bottom: 20px;
       // align-items: baseline;
     }
@@ -406,7 +433,7 @@
     color: $color-grey;
     border: none;
     border-bottom: 2px solid $color-black;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     padding-top: 10px;
 
     &:hover {
@@ -445,7 +472,7 @@
     color: $color-grey;
     border: none;
     border-bottom: 2px solid $color-black;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     padding-top: 10px;
     background: inherit;
 
@@ -477,7 +504,7 @@
     @media (min-width: $desktop-width) {
       margin-left: 82px;
       padding-top: 14px;
-      padding-bottom: 18px;
+      padding-bottom: 16px;
       margin-bottom: 34px;
     }
   }
@@ -554,8 +581,9 @@
     @media (min-width: $desktop-width) {
       // margin-left: 175px;
       // margin-right: 175px;
-      width: 814px;
+      width: 799px;
       margin: 0 auto;
+      margin-bottom: 29px;
     }
   }
 
@@ -586,8 +614,8 @@
     content: "";
     width: 16px;
     height: 16px;
-    top: 3px;
-    left: 14px;
+    top: 5px;
+    left: 12px;
     border-radius: 50%;
     display: block;
     position: absolute;
@@ -598,6 +626,11 @@
       height: 22px;
       top: 1px;
       left: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 14px;
     }
   }
 
@@ -616,6 +649,11 @@
     @media (min-width: $tablet-width) {
       width: 33px;
       height: 23px;
+      top: 0;
+      left: 9px;
+    }
+
+    @media (min-width: $tablet-width) {
       top: 0;
       left: 9px;
     }

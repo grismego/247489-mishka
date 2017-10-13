@@ -53,6 +53,10 @@
     justify-content: space-between;
     align-items: center;
 
+    // &:hover {
+    //   transform: scale(1.01);
+    // }
+
     @media (min-width: $tablet-width) {
       width: 50%;
     }
@@ -96,6 +100,10 @@
     min-height: 100px;
     padding: 25px 150px 29px 28px;
     text-decoration: none;
+
+    // &:hover {
+    //   transform: scaleY(1.2);
+    // }
 
     @media (min-width: $tablet-width) {
       @include textbold(20px, 30px);

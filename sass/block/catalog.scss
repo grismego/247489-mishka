@@ -75,7 +75,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 88%;
+      width: 90%;
     }
   }
 
@@ -104,6 +104,7 @@
 
     @media (min-width: $tablet-width) {
       text-align: left;
+      margin-top: 24px;
     }
   }
 
@@ -131,7 +132,7 @@
 
     @media (min-width: $desktop-width) {
       width: 100%;
-      padding: 0 20px;
+      padding: 0 24px;
       min-height: 200px;
     }
   }
@@ -168,6 +169,12 @@
 
   .catalog__price-cart {
     font-size: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 5px;
+      margin-top: 3px;
+      display: flex;
+    }
   }
 
   .catalog__price-cart-svg {
@@ -203,6 +210,12 @@
     @media (min-width: $tablet-width) {
       @include textbold(17px, 24px);
       padding-left: 5px;
+      padding-top: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-top: 0;
     }
   }
 }
