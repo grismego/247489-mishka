@@ -381,11 +381,11 @@
       @media (min-width: $tablet-width) {
         width: 54px;
         height: 54px;
-        left: -5px;
-        top: -16px;
+        left: -6px;
+        top: -17px;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desktop-width) {
         left: -2px;
         top: -17px;
       }
@@ -543,8 +543,10 @@
       border-color: $color-aqua;
     }
 
-    &:active {
+    &:active,
+    &:focus {
       border-color: $color-aqua;
+      color: $color-grey;
     }
 
     @media (min-width: $tablet-width) {
@@ -606,6 +608,10 @@
       color: $color-white;
     }
 
+    &:active {
+      color: #7c7c7c;
+    }
+
     @media (min-width: $tablet-width) {
       width: 227px;
     }
@@ -651,7 +657,7 @@
       width: 33px;
       height: 23px;
       top: 0;
-      left: 9px;
+      left: 6px;
     }
 
     @media (min-width: $tablet-width) {
@@ -678,6 +684,11 @@
 
   .form__input-phone:hover + .form__legend-phone-svg,
   .form__input-email:hover + .form__legend-email-svg {
+    fill: $color-aqua;
+  }
+
+  .form__input-phone:focus ~ .form__legend-phone-svg,
+  .form__input-email:focus ~ .form__legend-email-svg {
     fill: $color-aqua;
   }
 }

@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +49,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       margin-top: 45px;
-      height: 500px;  /* ДЛЯ IE */
+      height: 497px;  /*FOR IE */
       max-height: 535px;
     }
 
@@ -77,6 +78,7 @@
       @media (min-width: $tablet-width) {
         top: 4px;
         left: 12px;
+        letter-spacing: 0.01em;
       }
     }
 
