@@ -6,16 +6,14 @@
 
     &::after {
       content: "";
-      height: 10px;
-      margin-top: -10px;
+      height: 20px;
       width: 100%;
       z-index: 10;
       position: absolute;
-      bottom: 0;
+      bottom: -5px;
       display: block;
       background: url("../img/bg-zigzag-fill.svg") repeat-x;
       background-position-x: -18px;
-      background-size: 806px;
     }
   }
 
@@ -53,9 +51,9 @@
     justify-content: space-between;
     align-items: center;
 
-    // &:hover {
-    //   transform: scale(1.01);
-    // }
+    &:hover {
+      transform: scaleY(1.05);
+    }
 
     @media (min-width: $tablet-width) {
       width: 50%;
@@ -88,10 +86,6 @@
     }
   }
 
-  .categories__link:hover {
-    // padding-bottom: 34px;
-  }
-
   .categories__link {
     @include textbold(19px, 24px);
     color: $color-white;
@@ -101,13 +95,18 @@
     padding: 25px 150px 29px 28px;
     text-decoration: none;
 
-    // &:hover {
-    //   transform: scaleY(1.2);
-    // }
+    &:hover {
+      margin-bottom: 5px;
+    }
+
 
     @media (min-width: $tablet-width) {
       @include textbold(20px, 30px);
-      padding: 28px 200px 28px 37px;
+      padding: 28px 174px 28px 37px;
+
+      &:hover {
+        padding-top: 23px;
+      }
     }
 
     @media (min-width: $desktop-width) {
