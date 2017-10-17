@@ -4,13 +4,14 @@
   .form__text {
     @include textnormal(13px, 24px);
     color: $color-grey;
-    margin-top: 26px;
-    margin-bottom: 33px;
+    margin-top: 24px;
+    margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
       font-size: 17px;
       line-height: 30px;
       margin-top: 76px;
+      margin-bottom: 33px;
     }
 
     @media (min-width: $desktop-width) {
@@ -168,8 +169,9 @@
 
       @media (min-width: $desktop-width) {
         margin-left: 72px;
-        min-height: 154px;
-        height: 154px;
+        // min-height: 154px;
+        // height: 154px; /*For ie */
+        // max-height: 400px;
         padding: 0;
         justify-content: flex-start;
       }
@@ -352,7 +354,7 @@
     @media (min-width: $desktop-width) {
       // align-items: baseline;
       padding-left: 78px;
-      margin-bottom: 0;
+      margin-bottom: 59px;
       align-self: flex-start;
       margin-right: 59px;
 
@@ -362,7 +364,7 @@
     }
 
     &:last-child {
-      margin-bottom: 7px;
+      margin-bottom: 8px;
 
       @media (min-width: $desktop-width) {
         margin-bottom: 0;
