@@ -37,6 +37,7 @@
   .header-nav__logo {
     margin-right: 86px;
     width: 86px;
+    font-size: 0;
 
     @media (min-width: $tablet-width) {
       margin: 0 auto;
