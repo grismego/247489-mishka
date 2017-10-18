@@ -52,6 +52,7 @@
       padding-top: 77px;
       padding-bottom: 126px;
       width: 1050px;
+      // min-height: 542px;
     }
   }
 
@@ -87,6 +88,10 @@
 
     @media (min-width: $tablet-width) {
       letter-spacing: 0.08em;
+    }
+
+    @media (min-width: $desktop-width) {
+      letter-spacing: 0.05em;
     }
   }
 

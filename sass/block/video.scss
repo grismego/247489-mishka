@@ -20,7 +20,8 @@
     margin: 28px;
     margin-bottom: 25px;
     padding-left: 62px;
-    margin-top: 22px;
+    margin-top: 24px;
+
     position: relative;
 
 
@@ -118,28 +119,28 @@
     @media (min-width: $tablet-width) {
       order: -1;
       width: 668px;
-      height: 455px;
+      // height: 455px;
     }
 
     @media (min-width: $desktop-width) {
       order: 1;
       width: 682px;
-      height: 455px;
+      // height: 455px;
     }
   }
 
   .video__image {
     width: 260px;
-    height: 150px;
+    // height: 150px;
 
     @media (min-width: $tablet-width) {
       width: 668px;
-      height: 455px;
+      // height: 455px;
     }
 
     @media (min-width: $desktop-width) {
       width: 682px;
-      height: 455px;
+      // height: 455px;
     }
   }
 
