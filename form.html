@@ -11,49 +11,49 @@
 
 <body>
   <header class="header">
-    <nav class="header-nav">
-      <a href="index.html" class="header-nav__logo header-nav__logo--hidden">
-        <svg class="site-list__link-logo" width="86" height="35">
-          <use class="site-list__link-logo-mobile" xlink:href="img/sprite.svg#logo-mobile"></use>
-        </svg>
-        Мишка
-      </a>
-      <a href="#" class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Открыть меню</a>
-      <ul class="header-nav__list site-list site-list--no-js">
-        <li class="site-list__item site-list__item--logo">
-          <a href="index.html" class="header-nav__logo">
-            <svg class="site-list__link-logo site-list__link-logo--tablet" width="113" height="46">
-              <use xlink:href="img/sprite.svg#logo-tablet"></use>
-            </svg>
-            <svg class="site-list__link-logo site-list__link-logo--desktop" width="149" height="72">
-              <use xlink:href="img/sprite.svg#logo-desktop"></use>
-            </svg>
-            Мишка
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav__logo header-nav__logo--hidden">
+          <svg class="site-list__link-logo" width="86" height="35">
+            <use class="site-list__link-logo-mobile" xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+          Мишка
         </a>
-        </li>
-        <li class="site-list__item site-list__item--catalog">
-          <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
-        </li>
-        <li class="site-list__item site-list__item--order">
-          <a href="form.html" class="site-list__link site-list__link--order">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item site-list__item--search">
-          <a href="search.html" class="site-list__link site-list__link--search">
-            <svg class="site-list__link-search" width="18" height="19">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>
-            Поиск по сайту</a>
-        </li>
-        <li class="site-list__item site-list__item--cart">
-          <a href="#" class="site-list__link site-list__link--cart">
-            <svg class="site-list__link-cart" width="21" height="18">
-              <use xlink:href="img/sprite.svg#icon-cart"></use>
-            </svg>
-            Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        <a href="#" class="header-nav__toggle header-nav__toggle--open header-nav__toggle--no-js">Открыть меню</a>
+        <ul class="header-nav__list site-list site-list--no-js">
+          <li class="site-list__item site-list__item--logo">
+            <a href="index.html" class="header-nav__logo">
+              <svg class="site-list__link-logo site-list__link-logo--tablet" width="113" height="46">
+                <use xlink:href="img/sprite.svg#logo-tablet"></use>
+              </svg>
+              <svg class="site-list__link-logo site-list__link-logo--desktop" width="149" height="72">
+                <use xlink:href="img/sprite.svg#logo-desktop"></use>
+              </svg>
+              Мишка
+          </a>
+          </li>
+          <li class="site-list__item site-list__item--catalog">
+            <a href="catalog.html" class="site-list__link site-list__link--catalog">Каталог товаров</a>
+          </li>
+          <li class="site-list__item site-list__item--order">
+            <a href="form.html" class="site-list__link site-list__link--order">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--search">
+            <a href="search.html" class="site-list__link site-list__link--search">
+              <svg class="site-list__link-search" width="18" height="19">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              Поиск по сайту</a>
+          </li>
+          <li class="site-list__item site-list__item--cart">
+            <a href="#" class="site-list__link site-list__link--cart">
+              <svg class="site-list__link-cart" width="21" height="18">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   <div class="page-title page-title--zigzag">
     <div class="page-title__wrapper">
       <div class="page-title__list page-list">
@@ -73,7 +73,7 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__fieldset form__fieldset--type-box">
         <div class="form__wrapper">
-          <legend class="form__legend">Тип</legend>
+          <span class="form__legend">Тип</span>
           <div class="form__section">
             <input type="radio" name="radio" value="accesories" class="form__input-hidden" id="accesories" checked>
             <label for="accesories" class="form__radiobutton">Аксессуар для интерьера</label>
@@ -84,7 +84,7 @@
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--color-box">
         <div class="form__wrapper">
-          <legend class="form__legend">Цвет</legend>
+          <span class="form__legend">Цвет</span>
           <div class="form__section form__section--row">
             <input type="checkbox" id="color-1" class="form__input-hidden" checked>
             <label for="color-1" class="form__label">Белый</label>
@@ -103,7 +103,7 @@
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--fio">
         <div class="form__wrapper">
-          <legend class="form__legend">ФИО</legend>
+          <span class="form__legend">ФИО</span>
           <div class="form__section form__section--name">
             <div class="form__block-name">
               <label for="name-1" class="form__label-name">Имя:</label>
@@ -123,14 +123,14 @@
       <fieldset class="form__fieldset form__fieldset--callback">
         <div class="form__wrapper form__wrapper--callback">
           <div class="form__block-phone">
-            <legend class="form__legend form__legend--phone">Тел</legend>
+            <span class="form__legend form__legend--phone">Тел</span>
             <input type="tel" name="phone" value="" placeholder="+7 XXX XX XX*" required class="form__input-phone">
             <svg width="25" height="24" class="form__legend-phone-svg">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
           </div>
           <div class="form__block-email">
-            <legend class="form__legend form__legend--email">E-mail</legend>
+            <span class="form__legend form__legend--email">E-mail</span>
             <input type="email" name="email" value="" placeholder="Ваш Email*" required class="form__input-email">
             <svg width="32" height="21" class="form__legend-email-svg">
               <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -140,7 +140,7 @@
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--textarea">
         <div class="form__wrapper form__wrapper--textarea">
-          <legend class="form__legend">ДОП</legend>
+          <span class="form__legend">ДОП</span>
           <textarea name="name" rows="6" cols="30" class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </fieldset>
@@ -190,6 +190,23 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__window">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <span class="modal__option">Выберете размер:</span>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="radio" name="radio-value" value="small" id="modal__radio-1" checked>
+        <input type="radio" name="radio-value" value="middle" id="modal__radio-2">
+        <input type="radio" name="radio-value" value="large" id="modal__radio-3">
+        <div class="modal__toggles">
+          <label for="modal__radio-1" class="modal__toggle">s</label>
+          <label for="modal__radio-2" class="modal__toggle">m</label>
+          <label for="modal__radio-3" class="modal__toggle">l</label>
+        </div>
+        <button type="submit" name="button" class="button modal__button">Добавить</button>
+      </form>
+    </div>
+  </div>
   <script src="js/javascript.js"></script>
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody(); // run it now or whenever you are ready</script>

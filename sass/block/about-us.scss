@@ -7,12 +7,13 @@
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 0;
+    padding-top: 44px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 59px;
+    padding-bottom: 37px;
   }
 
 
@@ -30,6 +31,7 @@
       width: 100%;
       padding: 0;
       padding-left: 174px;
+      padding-right: 174px;
       max-width: 1050px;
 
       // padding: 0;
@@ -41,22 +43,21 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     margin-top: 30px;
 
     @media (min-width: $tablet-width) {
-      flex-direction: column;
+      display: flex;
       flex-wrap: wrap;
       margin-top: 45px;
-      height: 497px;  /*FOR IE */
-      max-height: 535px;
     }
 
     @media (min-width: $desktop-width) {
       align-items: baseline;
       align-content: flex-start;
       align-self: flex-start;
+      max-width: 1050px;
     }
   }
 
@@ -66,6 +67,48 @@
     margin-bottom: 25px;
     text-align: left;
     position: relative;
+
+    &--flower {
+      @media (min-width: $tablet-width) {
+        order: 1;
+      }
+    }
+
+    &--money {
+      @media (min-width: $tablet-width) {
+        order: 3;
+      }
+    }
+
+    &--likes {
+      @media (min-width: $tablet-width) {
+        order: 5;
+      }
+    }
+
+    &--ball {
+      @media (min-width: $tablet-width) {
+        order: 2;
+      }
+    }
+
+    &--rocket {
+      @media (min-width: $tablet-width) {
+        order: 4;
+      }
+    }
+
+    &--gift {
+      @media (min-width: $tablet-width) {
+        order: 6;
+      }
+    }
+    // &--flower {
+    //   @media (min-width: $tablet-width) {
+    //     order: 1;
+    //   }
+    // }
+
 
     &--flower::before {
       position: absolute;
@@ -166,9 +209,10 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: auto;
-      margin-right: 112px;
+      width: 50%;
+      // margin-right: 112px;
       align-self: flex-start;
+      max-width: 351px;
     }
   }
 }

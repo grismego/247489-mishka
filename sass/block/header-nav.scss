@@ -41,6 +41,8 @@
 
     @media (min-width: $tablet-width) {
       margin: 0 auto;
+      display: flex;
+      width: auto;
     }
 
     &--hidden {
