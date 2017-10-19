@@ -9,6 +9,8 @@
 
   &--show {
     display: flex;
+    position: absolute;
+    top: 34px;
   }
 
   &--no-js {
@@ -30,6 +32,7 @@
     padding-left: 70px;
     display: block;
     position: relative;
+    border-top: 1px solid #ececec;
 
     &:hover {
       opacity: 0.6;
@@ -40,7 +43,7 @@
     }
 
     @media (min-width: $tablet-width) {
-
+      border-top: none;
       min-height: 89px;
 
       &--search {
@@ -116,6 +119,10 @@
   }
 
   .site-list__item {
+    &--logo {
+      display: none;
+    }
+
     @media (min-width: $tablet-width) {
       &--catalog,
       &--order {
@@ -124,6 +131,7 @@
 
       &--logo {
         margin-right: auto;
+        display: flex;
       }
     }
 
