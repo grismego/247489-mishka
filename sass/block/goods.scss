@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 100%;
   // padding: 30px 30px;
-  padding-top: 30px;
+  padding-top: 28px;
   // padding-bottom: 37px;
   // border-bottom: 7px solid #f1f1f1;
   // border-image: url("../img/bg-zigzag-line.svg") 30 round;
@@ -100,14 +100,14 @@
   .goods__description {
     @include textnormal(15px, 24px);
     color: $color-grey;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 16px;
     width: 260px;
 
     @media (min-width: $tablet-width) {
       width: 44%;
       margin-top: 43px;
-      margin-bottom: 32px;
+      margin-bottom: 35px;
 
       @include textnormal(17px, 30px);
     }
@@ -135,7 +135,7 @@
     text-align: center;
     color: $color-grey;
     margin-top: 22px;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
 
     @media (min-width: $tablet-width) {
       width: 40%;
@@ -180,6 +180,7 @@
     @media (min-width: $tablet-width) {
       // max-height: 600px;
       align-items: flex-start;
+      flex-wrap: nowrap;
       // justify-content: space-between;
     }
 
@@ -199,7 +200,8 @@
       order: 1;
       margin-left: auto;
       width: 333px;
-      margin-top: -220px;
+      margin-top: -221px;
+      // min-height: 404px;
     }
 
     @media (min-width: $desktop-width) {
