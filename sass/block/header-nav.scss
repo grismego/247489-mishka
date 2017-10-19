@@ -85,7 +85,7 @@
     }
 
     &--no-js {
-      background: url("../img/icon-menu-close.svg") no-repeat;
+      visibility: hidden;
     }
   }
 }
