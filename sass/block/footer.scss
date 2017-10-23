@@ -39,17 +39,15 @@
   }
 
   .footer__wrapper {
-    // width: 1050px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 
     @media (min-width: $tablet-width) {
-      // max-width: 1150px;
+
       align-items: center;
       padding: 27px 50px;
-      // padding-top: 27px;
       flex-direction: row;
     }
 

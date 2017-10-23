@@ -23,13 +23,6 @@ for (var i = 0; i < modal_window.length; i++) {
   modal.addEventListener("click", function() {
     modal.classList.remove("modal--show");
   });
-
-
-    // if (modal.classList.contains("modal--show")) {
-    //   modal.addEventListener("click", function (el){
-    //     modal.classList.remove("modal--show");
-    //   });
-    // }
   });
 };
 

@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  // padding: 0 30px;
-  // align-items: center;
   position: relative;
   flex-wrap: wrap;
   width: 100%;
@@ -25,16 +23,12 @@
   }
 
   .header-nav__list {
-    // position: absolute;
     border-top: 1px solid #ececec;
     margin-top: 40px;
-    // top: 80px;
-    // left: 0;
     z-index: 2;
 
     @media (min-width: $tablet-width) {
       position: static;
-      // align-self: center;
       margin-top: 0;
       align-items: center;
       border-top: none;
@@ -65,7 +59,6 @@
     height: 20px;
     margin-right: 30px;
     margin-top: 11px;
-    // margin-left: auto;
 
     &--open {
       background: url("../img/icon-menu-open.svg") no-repeat;

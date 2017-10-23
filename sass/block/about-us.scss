@@ -1,7 +1,4 @@
 .about-us {
-
-  // display: flex;
-  // padding: 0 30px;
   width: 100%;
   padding-top: 24px;
   padding-bottom: 30px;
@@ -33,9 +30,6 @@
       padding-left: 174px;
       padding-right: 174px;
       max-width: 1050px;
-
-      // padding: 0;
-      // padding-left: 170px;
     }
   }
 
@@ -43,8 +37,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    // display: flex;
-    // flex-direction: column;
     margin-top: 30px;
 
     @media (min-width: $tablet-width) {
@@ -103,12 +95,6 @@
         order: 6;
       }
     }
-    // &--flower {
-    //   @media (min-width: $tablet-width) {
-    //     order: 1;
-    //   }
-    // }
-
 
     &--flower::before {
       position: absolute;
@@ -210,7 +196,6 @@
 
     @media (min-width: $desktop-width) {
       width: 50%;
-      // margin-right: 112px;
       align-self: flex-start;
       max-width: 351px;
     }

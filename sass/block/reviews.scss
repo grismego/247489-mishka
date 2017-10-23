@@ -1,22 +1,12 @@
 .reviews {
   width: 100%;
-  // border-bottom: 7px solid #f1f1f1;
-  // border-image: url("../img/bg-zigzag-line.svg") 30 round;
-  // padding: 35px 0;
 
   @media (min-width: $tablet-width) {
-    // background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    // border-width: 17px;
-    // background-size: auto;
-    // padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 7px;
-    // padding-top: 77px;
-    // padding-bottom: 138px;
-    // background-size: contain;
   }
 
   .reviews__wrapper {
@@ -46,13 +36,11 @@
     }
 
     @media (min-width: $desktop-width) {
-      // padding-left: 176px;
       padding: 0;
       padding-left: 174px;
       padding-top: 71px;
       padding-bottom: 135px;
       width: 1050px;
-      // min-height: 542px;
     }
   }
 

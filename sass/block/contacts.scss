@@ -27,8 +27,6 @@
 
     @media (min-width: $desktop-width) {
       flex-direction: column;
-      // min-height: 460px;
-      // max-height: 500px;
       width: 1050px;
       margin: 0 auto;
       padding-left: 170px;
@@ -95,7 +93,6 @@
     color: $color-black;
 
     @media (min-width: $tablet-width) {
-      // padding-left: 50px;
       padding: 48px 46px;
       padding-bottom: 45px;
       margin-bottom: 2px;
@@ -130,7 +127,6 @@
 
       @include textbold(53px, 57px);
     }
-    // padding: 0 30px;
   }
 
   .contacts__adress-value {
@@ -203,7 +199,6 @@
     @media (min-width: $tablet-width) {
       margin: 0 auto;
       margin-top: 44px;
-      // margin-left: 97px;
     }
 
     @media (min-width: $desktop-width) {

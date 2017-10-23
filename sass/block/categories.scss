@@ -21,7 +21,7 @@
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding: 0;
-    // width: 1050px;
+
     &::after {
       content: "";
       height: 37px;
@@ -45,8 +45,6 @@
     @media (min-width: $tablet-width) {
       flex-direction: row;
       padding: 0 50px;
-      // padding: 0 50px;
-      // margin: 0 50px;
     }
 
     @media (min-width: $desktop-width) {
@@ -58,7 +56,7 @@
 
   .categories__item {
     width: 100%;
-    // padding: 27px;
+
     position: relative;
     display: flex;
     justify-content: space-between;
