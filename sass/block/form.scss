@@ -192,6 +192,7 @@
 
     &:hover {
       fill: $color-aqua;
+      transition: 0.3s;
     }
 
     @media (min-width: $tablet-width) {
@@ -213,6 +214,7 @@
 
     &:hover {
       fill: $color-aqua;
+      transition: 0.3s;
     }
 
     @media (min-width: $tablet-width) {
@@ -425,6 +427,7 @@
 
     &:hover {
       border-bottom: 2px solid $color-aqua;
+      transition: 0.3s;
     }
 
     &:active {
@@ -473,6 +476,7 @@
 
     &:hover {
       border-color: $color-aqua;
+      transition: 0.3s;
     }
 
     @media (min-width: $tablet-width) {
@@ -523,6 +527,7 @@
 
     &:hover {
       border-color: $color-aqua;
+      transition: 0.3s;
     }
 
     &:active,
@@ -588,6 +593,7 @@
     &:hover {
       background-color: $color-grey;
       color: $color-white;
+      transition: 0.3s;
     }
 
     &:active {
